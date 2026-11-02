@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 256, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 252, in main
+    return handler(args) or 0
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 123, in cmd_scout
+    res = decide(out, cfg, pilot, pilot_sim, prices, args.budget, seed_files()["improver.py"], model_budgets)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/scout.py", line 106, in decide
+    est = calibrated(pilot_sim_dir, pilot_cfg, prices, observed_profile(scout_dir, scout_cfg))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/budget.py", line 41, in calibrated
+    profile = dict(OUTPUT_TOKENS, **(out_profile or {}))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: keywords must be strings
+No pilot simulation at /home/runner/work/RSIExp/RSIExp/runs_brainswap_mock/pilot/null; running one (mock, free) for call counts...
+evolution/A0: final dev bar 2.5, accepted 1, procedure edits kept 0
+evolution/A1: final dev bar 3, accepted 2, procedure edits kept 0
+evolution/B1: final dev bar 7, accepted 1, procedure edits kept 0
+evolution/B0: final dev bar 8.5, accepted 4, procedure edits kept 1
+audits: 16 cells

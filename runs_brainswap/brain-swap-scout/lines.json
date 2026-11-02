@@ -1,0 +1,50 @@
+[
+ {
+  "name": "evolution-A0",
+  "model": "claude-haiku-5-5",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 2.5,
+  "accepted": 1,
+  "proc_edits_accepted": 0,
+  "finished_at": "2026-10-29T20:27:53+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-A1",
+  "model": "claude-haiku-5-5",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 3.0,
+  "accepted": 2,
+  "proc_edits_accepted": 0,
+  "finished_at": "2026-10-29T20:28:54+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-B0",
+  "model": "gpt-6.1-terra",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 8.5,
+  "accepted": 4,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-29T21:11:16+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-B1",
+  "model": "gpt-6.1-terra",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 7.0,
+  "accepted": 1,
+  "proc_edits_accepted": 0,
+  "finished_at": "2026-10-29T20:43:57+00:00",
+  "group": "evolution"
+ }
+]

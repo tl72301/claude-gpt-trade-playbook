@@ -1,0 +1,27 @@
+# Follow-up to pilot v3, closing the two holes the reviews flagged:
+#   1. a retry-only baseline: the seed solver with its existing check-and-retry loop
+#      simply switched on (ATTEMPTS = 3, USE_CHECK = True), scored on the pilot's
+#      sealed set under both models -- how much of the gain was that one switch?
+#   2. three more frozen-procedure lineages per model, so the "does editing the
+#      procedure help" comparison has four frozen runs per model instead of one.
+# Same tasks and sealed baselines as pilot v3 (copied in by `python -m brainswap extra`).
+# No evolution lineages and no audits: the swap question is not re-run here.
+extends: pilot_v3.yaml
+name: brain-swap-pilot-v3-extra
+source_run: brain-swap-pilot-v3          # tasks.json and sealed_baselines.json are reused from here
+evolution:
+  lineages_per_model: 0
+  generations: 6
+  require_proc_edit: true
+baselines:
+  frozen_lineages_per_model: 3
+  onegen_lineages_per_model: 0
+audits:
+  checkpoints: []
+  sealed_baseline_repeats: 2
+retry_only:
+  attempts: 3                            # the harness allows at most 3 solver calls per puzzle
+  repeats: 2
+limits:
+  max_usd_total: null           # spend cap in dollars: set your own
+  max_usd_per_model: null

@@ -1,0 +1,86 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   6,
+   5
+  ],
+  "bar": 5.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether the solver's retries fix hidden-test overfitting, and record which rule types (counting, filtering, ordering, index-based) were missed.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 5.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: check whether the verify-and-retry loop raises hidden-test scores on partial-pass tasks, and log which rule family (filter, count, order, pairwise, index) each failure belongs to.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 5.5
+ }
+]

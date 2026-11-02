@@ -1,0 +1,42 @@
+{
+ "decision": "NO-GO",
+ "checks": [
+  {
+   "criterion": "C1 health",
+   "pass": false,
+   "detail": "refusals 0.0%, mismatches 0, broken generations 16/24",
+   "if_failed": "Read the improver replies in evolution/*/history.json; fix the seed prompt/format or swap the model."
+  },
+  {
+   "criterion": "C2 headroom",
+   "pass": true,
+   "detail": "A: 35%, B: 45%",
+   "if_failed": "Change tasks.partitions depths (harder if a model is above 70%, easier if below 20%)."
+  },
+  {
+   "criterion": "C3 loop works",
+   "pass": true,
+   "detail": "A: mean dev gain +1.0, procedure edits kept 2; B: mean dev gain +2.0, procedure edits kept 2",
+   "if_failed": "If gains are ~0: raise improver_budget or generations. If procedure edits are never kept: the brain-swap question is moot -- report that as the finding."
+  },
+  {
+   "criterion": "C4 divergence",
+   "pass": true,
+   "detail": "A: 2 lineage(s) changed their procedure; B: 2 lineage(s) changed their procedure",
+   "if_failed": "Same as C3: without procedure change there is nothing to specialize."
+  },
+  {
+   "criterion": "C5 noise",
+   "pass": true,
+   "detail": "gen-0 gain SD 2.57 tasks (scout) -> pilot minimum detectable S ~ 4.8 tasks (limit 6)",
+   "if_failed": "Raise audits.replicates_per_cell, cut presentations to [orig, norm], or add lineages -- or accept that the pilot can only detect a very large effect."
+  },
+  {
+   "criterion": "C6 cost",
+   "pass": true,
+   "detail": "dollar figures removed from the public copy",
+   "if_failed": "Shrink the pilot (fewer lineages/generations) or load more credit with that vendor."
+  }
+ ],
+ "note": "The scout's crossed matrix (2 lineages) is too small to interpret."
+}

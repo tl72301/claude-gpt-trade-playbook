@@ -1,0 +1,11 @@
+{
+ "name": "c6-A2-opB-norm",
+ "model": "gpt-6.1-terra",
+ "mode": "full",
+ "presentation": "norm",
+ "generations": 3,
+ "final_bar": 13.0,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T13:55:42+00:00"
+}

@@ -1,0 +1,89 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 256, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 252, in main
+    return handler(args) or 0
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 117, in cmd_scout
+    Experiment(cfg, out, mock_scenario="null" if args.mock else None).run()
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 261, in run
+    cells = self.audit()
+            ^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 253, in audit
+    results = list(pool.map(go, specs))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 229, in go
+    s = ln.run(K)
+        ^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/lineage.py", line 125, in run
+    ev = self._eval(cand, self.dev, "dev", f"g{g}:0")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/lineage.py", line 80, in _eval
+    return evaluate(files["solver.py"], tasks, self.model, self.sandbox, self.cfg, self.ledger,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/runtime.py", line 147, in evaluate
+    results = list(pool.map(one, tasks))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/runtime.py", line 136, in one
+    run = run_solver(solver_src, task, model, sandbox, cfg, ledger, purpose, nonce)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/runtime.py", line 125, in run_solver
+    res = run_entry("solver", solver_src, task.public(), handlers, sandbox, b["wall_seconds"])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/broker.py", line 165, in run_entry
+    ok = reply({"value": handler(msg)})
+                         ^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/runtime.py", line 93, in handle
+    r = model.complete(msg["messages"], system=msg.get("system") or None, max_tokens=max_tokens,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/models.py", line 33, in complete
+    r = self.client.chat.completions.create(model=self.model, messages=msgs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1611, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openai/_base_client.py", line 1474, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openai/_base_client.py", line 1248, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - Could not finish the message because max_tokens or model output limit was reached. Please try again with higher max_tokens.
+No pilot simulation at /home/runner/work/RSIExp/RSIExp/runs_brainswap_mock/pilot/null; running one (mock, free) for call counts...
+evolution/A1: final dev bar 2.5, accepted 1, procedure edits kept 1
+evolution/A0: final dev bar 2.5, accepted 1, procedure edits kept 1
+evolution/B0: final dev bar 7.5, accepted 3, procedure edits kept 3
+evolution/B1: final dev bar 8, accepted 3, procedure edits kept 3

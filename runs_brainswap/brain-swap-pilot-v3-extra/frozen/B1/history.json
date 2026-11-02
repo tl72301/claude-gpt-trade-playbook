@@ -1,0 +1,241 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   9
+  ],
+  "bar": 8.5,
+  "progress": 13
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether explicit hypothesis comparison improves hidden-test generalization; use trial feedback to refine the solver.",
+  "dev": [
+   11,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "progress": 12,
+  "bar": 11.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 755,
+    "tokens_after": 755,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Inspect whether remaining failures are inference errors or missing-function responses; use trial feedback when available.",
+  "dev": [
+   12,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "progress": 14,
+  "bar": 11.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 920,
+    "tokens_after": 920,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Test whether independent rule auditing improves hidden generalization; inspect full failed examples and compare trial candidates.",
+  "dev": [
+   12,
+   9
+  ],
+  "status": "rejected_confirmation",
+  "bar": 11.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 920,
+    "tokens_after": 920,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare competing rules and inspect all failed examples; trial proposals when budget permits.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 11.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 920,
+    "tokens_after": 920,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Inspect all failed examples and trial alternative inference strategies; visible-example checks alone cannot detect overfitting.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 11.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 920,
+    "tokens_after": 920,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare audited inference against the previous single-pass solver; inspect every failed example and use trial feedback when available.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 11.5
+ }
+]

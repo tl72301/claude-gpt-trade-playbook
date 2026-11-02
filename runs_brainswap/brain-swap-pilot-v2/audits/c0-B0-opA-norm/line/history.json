@@ -1,0 +1,123 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   8
+  ],
+  "bar": 8.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether check-driven retries raised the solve count; if not, try richer failure diagnosis or more attempts.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: measure whether check-driven repair raised the solve count, then tune hints or attempt count accordingly.",
+  "dev": [
+   6
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: solver now repairs using failing examples with 4 attempts and a rule-inference prompt; improver notes now direct judging changes by solved count.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ }
+]

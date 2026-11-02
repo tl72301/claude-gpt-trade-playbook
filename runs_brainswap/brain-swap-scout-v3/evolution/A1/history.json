@@ -1,0 +1,238 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   2,
+   2
+  ],
+  "bar": 2.0,
+  "progress": 3
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether api.check-driven retries raised the solve count; if the solver still fails on rule inference, add a step asking the model to state the rule in words before coding.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether rule-first prompting plus check-driven repair raised the solve count, and whether trial-based candidate selection is picking real improvements.",
+  "dev": [
+   3,
+   2
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 4,
+  "bar": 2.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 752,
+    "tokens_after": 752,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1126,
+    "tokens_after": 1126,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the \"no function f\" failures dropped to zero and whether best-so-far selection plus failing-case repair raised the solve count on hidden tests.",
+  "dev": [
+   3,
+   1
+  ],
+  "status": "rejected_confirmation",
+  "bar": 2.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 752,
+    "tokens_after": 752,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1126,
+    "tokens_after": 1126,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the no-function-f failures dropped to zero, whether hidden-test solve counts rose after the failing-example repair prompt, and whether trial scores track development results.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 752,
+    "tokens_after": 752,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1126,
+    "tokens_after": 1126,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the missing-f count reached zero, whether repair prompts listing all failing examples raised hidden-test solves, and whether trial scores track development results.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 752,
+    "tokens_after": 752,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1126,
+    "tokens_after": 1126,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether the missing-f count is zero, whether solver trial scores beat the baseline, and whether hidden-test solves rise after the best-so-far repair loop.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ }
+]

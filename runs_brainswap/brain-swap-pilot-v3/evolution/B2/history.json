@@ -1,0 +1,237 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   9,
+   9
+  ],
+  "bar": 9.0,
+  "progress": 12
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Trial multiple generalizable inference strategies and validate generated source before submission.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: syntax error: unmatched ')' (line 33)"
+  ],
+  "bar": 9.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare general inference strategies with trials; inspect all shown examples and avoid task-specific memorization.",
+  "dev": [
+   12,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 14,
+  "bar": 12.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 774,
+    "tokens_after": 774,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1214,
+    "tokens_after": 1214,
+    "coverage": 1.0
+   }
+  },
+  "note": "Investigate filter-then-pair hypotheses and compare candidates using hidden-test trials.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 774,
+    "tokens_after": 774,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1214,
+    "tokens_after": 1214,
+    "coverage": 1.0
+   }
+  },
+  "note": "Investigate pipeline ambiguity and compare general inference strategies with available trials.",
+  "dev": [
+   12
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 774,
+    "tokens_after": 774,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1214,
+    "tokens_after": 1214,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare pipeline-aware inference with the existing solver; small trial samples can make candidate rankings noisy.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 774,
+    "tokens_after": 774,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1214,
+    "tokens_after": 1214,
+    "coverage": 1.0
+   }
+  },
+  "note": "Investigate filtered-adjacency rules and compare trial results cautiously; validate generated code before checking it.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ }
+]

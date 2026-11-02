@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   10
+  ],
+  "bar": 10.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1214,
+    "tokens_after": 1214,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen1 changed solver to 4 attempts with check feedback and general hints; next, inspect which tasks still fail hidden tests and refine the hints.",
+  "dev": [
+   12,
+   13
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 649,
+    "tokens_after": 649,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1213,
+    "tokens_after": 1213,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen2 raised attempts to 5, added hints on window+filter combos and length analysis, and made retries demand a different rule; next, check whether remaining failures (pairwise-diff/neighbor tasks) improved on hidden tests.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 12.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 649,
+    "tokens_after": 649,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1213,
+    "tokens_after": 1213,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen4: solver now shows up to 3 failures per retry and hints at per-element derivation and window+filter pipelines; check whether hidden-test failures on neighbor/pairwise tasks drop.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 12.5
+ }
+]

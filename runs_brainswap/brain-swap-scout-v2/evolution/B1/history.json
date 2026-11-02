@@ -1,0 +1,242 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   5
+  ],
+  "bar": 4.5,
+  "progress": 5
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Inspect trial outcomes and hidden-test failure patterns; prioritize general rules over example-specific patches.",
+  "dev": [
+   5,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 8,
+  "bar": 6.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Require executable candidates even when uncertain, validate extraction, and use comparable trial sizes when evaluating proposals.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 6.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate extracted code, challenge example-fitting rules, and compare trial proposals using consistent sizes.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 6.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate executable candidates, request a best-effort implementation when uncertain, and compare trial proposals at consistent sizes.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 6.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Require executable candidates, use check feedback for revisions, and challenge rules that fit the examples before selecting a solution. Validate and compare improvement proposals using consistent trial sizes.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 6.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Generate and compare competing rules, validate code extraction, and use comparable trial sizes for improvement proposals.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 6.0
+ }
+]

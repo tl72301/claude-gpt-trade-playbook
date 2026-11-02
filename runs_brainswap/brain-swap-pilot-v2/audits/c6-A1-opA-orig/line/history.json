@@ -1,0 +1,129 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   6,
+   8
+  ],
+  "bar": 7.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4 dominant pattern was wrong_rule_wrong_length (9 of 10 failures); solver now checks its output against examples with length feedback, and improver adds pattern-specific advice.",
+  "dev": [
+   8,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 8.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2312,
+    "tokens_after": 2312,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: fixed the length classifier (it fired on any length-changing task) and made solver feedback cover all failing examples and length errors, with 4 attempts.",
+  "dev": [
+   9,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 8.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1056,
+    "tokens_after": 1056,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2311,
+    "tokens_after": 2311,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6: dominant pattern is wrong_rule; solver now enumerates candidate rules, prefers code that defines f, and improver ranks rewrites by trial results when budget allows.",
+  "dev": [
+   10,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.0
+ }
+]

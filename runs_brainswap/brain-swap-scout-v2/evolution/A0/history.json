@@ -1,0 +1,237 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   1,
+   2
+  ],
+  "bar": 1.5,
+  "progress": 3
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next generation: check whether the self-checking retry loop raises the solve count, and refine the strategy notes from the new failures.",
+  "dev": [
+   3,
+   3
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 5,
+  "bar": 3.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 751,
+    "tokens_after": 751,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether the solver's multi-failure feedback and robust extraction cut the missing-f and wrong-rule counts, then tighten the notes on output-length rules.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 751,
+    "tokens_after": 751,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: check whether the syntax-checked retry with all failing examples cuts the missing-f count, and whether hidden-test failures drop after the generality hints.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 3.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 751,
+    "tokens_after": 751,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: check whether the tally shows missing-f failures at zero and whether hidden-test failures fall after the generality hints; if not, add a second-pass self-review step.",
+  "dev": [
+   1
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 751,
+    "tokens_after": 751,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether the tally shows zero \"no function f\" failures, then whether hidden-test failures fall after the locality hints; if the wrong-rule count dominates, add a rule-naming step before code.",
+  "dev": [
+   3
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 751,
+    "tokens_after": 751,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1138,
+    "tokens_after": 1138,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: check whether the tally shows missing_f at zero and whether visible_wrong_rule falls after the one-sentence rule step; if hidden_tests dominates, tighten the edge-case hints.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 3.0
+ }
+]

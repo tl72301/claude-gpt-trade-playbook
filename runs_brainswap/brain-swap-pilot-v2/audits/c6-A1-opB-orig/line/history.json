@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   10
+  ],
+  "bar": 10.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "wrong_rule_wrong_length: improve inference of selection, ordering, and output length; validate proposals with trials.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: syntax error: unmatched ')' (line 43)"
+  ],
+  "bar": 10.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "wrong_rule_wrong_length: compare competing selection and transformation rules across all examples; measure future candidates with trials.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 10.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "wrong_rule_wrong_length: compare selection, ordering and length hypotheses; trial future candidates.",
+  "dev": [
+   12,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.0
+ }
+]

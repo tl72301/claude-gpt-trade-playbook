@@ -1,0 +1,238 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   7
+  ],
+  "bar": 8.5,
+  "progress": 14
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use example validation and independent rule critique; compare future proposals with budget-aware trials.",
+  "dev": [
+   11,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 14,
+  "bar": 11.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 926,
+    "tokens_after": 926,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate revisions, recover executable code from mixed responses, and test distinct general improvements within budget.",
+  "dev": [
+   12,
+   10
+  ],
+  "status": "rejected_confirmation",
+  "bar": 11.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 926,
+    "tokens_after": 926,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Recover executable functions from mixed responses and validate revisions before replacing a passing candidate.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 926,
+    "tokens_after": 926,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate executable candidates, retain the best checked solution, and use bounded retries for malformed or failing responses.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 926,
+    "tokens_after": 926,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Recover executable functions from mixed responses, validate revisions, and compare proposals using equally sized trials.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 926,
+    "tokens_after": 926,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Recover complete functions from mixed responses, retry malformed output, and validate revisions before replacing a working candidate.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ }
+]

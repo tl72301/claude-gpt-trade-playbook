@@ -1,0 +1,6 @@
+# SIMULATION of the scout (mock models) -- used for call counts and CI.
+extends: scout.yaml
+name: brain-swap-scout-SIMULATED
+sandbox: {isolation: inprocess}
+workers: 4
+parallel_lines: 1

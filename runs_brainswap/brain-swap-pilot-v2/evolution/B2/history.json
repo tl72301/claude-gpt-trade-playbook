@@ -1,0 +1,237 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   6,
+   7
+  ],
+  "bar": 6.5,
+  "progress": 9
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use trial feedback to compare general-purpose synthesis strategies; passing shown examples alone does not establish the hidden rule.",
+  "dev": [
+   11,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 14,
+  "bar": 11.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1034,
+    "tokens_after": 1034,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated code, compare competing hypotheses, and reserve trial budget for multiple proposals.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1034,
+    "tokens_after": 1034,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated code, reconsider ambiguous rules, and retain measured candidates under budget exhaustion.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1034,
+    "tokens_after": 1034,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated functions, compare checked hypotheses, and preserve trial budget for alternative proposals.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1034,
+    "tokens_after": 1034,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated functions and compare independently reviewed hypotheses; reserve trial budget for comparable proposals.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1034,
+    "tokens_after": 1034,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated functions, preserve the best checked candidate, and compare improvements with budget-aware trials.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ }
+]

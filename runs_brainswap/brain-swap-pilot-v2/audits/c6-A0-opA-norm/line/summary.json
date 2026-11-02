@@ -1,0 +1,11 @@
+{
+ "name": "c6-A0-opA-norm",
+ "model": "claude-haiku-5-5",
+ "mode": "full",
+ "presentation": "norm",
+ "generations": 3,
+ "final_bar": 9.0,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T12:35:08+00:00"
+}

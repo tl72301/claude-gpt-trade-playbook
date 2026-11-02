@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   9
+  ],
+  "bar": 9.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now uses check-and-retry with 4 attempts and hints; improver now samples 2 candidates and trial-scores them on 6 tasks.",
+  "dev": [
+   11,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 11.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 626,
+    "tokens_after": 626,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 992,
+    "tokens_after": 992,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 2: solver has 5 attempts, richer hints, better extraction, best-code fallback; improver samples 3 candidates, trials on 8 tasks.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 626,
+    "tokens_after": 626,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 992,
+    "tokens_after": 992,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: solver now re-derives rule on failure, keeps best-failing-count code; improver validates proposals, 3 candidates, 8 trial tasks. Next: target neighbor/window tasks.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ }
+]

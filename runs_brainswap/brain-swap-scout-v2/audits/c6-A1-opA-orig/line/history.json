@@ -1,0 +1,87 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   5,
+   6
+  ],
+  "bar": 5.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1497,
+    "tokens_after": 1497,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4 solver adds compile-error and check-driven repair with a general-rule prompt; improver now samples 3 candidates and picks by a 4-task trial.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 5.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1497,
+    "tokens_after": 1497,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: check whether the compile gate and general-rule prompt raised hidden-test pass rates on length-changing tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 5.5
+ }
+]

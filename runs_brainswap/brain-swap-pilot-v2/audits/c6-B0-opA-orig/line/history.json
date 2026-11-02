@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   9,
+   10
+  ],
+  "bar": 9.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1101,
+    "tokens_after": 1101,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now checks against shown examples up to 3 times, feeding back failing cases to re-derive the rule instead of patching; next gen should verify whether this lifts the low-scoring length-changing and counting tasks.",
+  "dev": [
+   10,
+   10
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 10.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 916,
+    "tokens_after": 916,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1287,
+    "tokens_after": 1287,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: solver now enforces a top-level def f with AST validation and robust extraction, requires a stated rule plus hand-verification, and feeds back failing cases to re-derive the rule; improver falls back to the first well-formed proposal when trials do not run.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 10.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 916,
+    "tokens_after": 916,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1287,
+    "tokens_after": 1287,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: solver extracts any def f block robustly, validates def f(xs) before checking, and revises from a stated general rule with hand-computed examples; improver validates both files for syntax and falls back to the first valid proposal.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 10.0
+ }
+]

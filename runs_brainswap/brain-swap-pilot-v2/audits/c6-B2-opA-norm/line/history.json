@@ -1,0 +1,124 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   8
+  ],
+  "bar": 8.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 24,
+    "renamed": 24,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1143,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now gates candidates on compilation, repairs using all failing shown examples with best-candidate retention, and handles budget exhaustion; improver rejects malformed proposals and ranks by trial score.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 24,
+    "renamed": 24,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1143,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now compiles and checks candidates, repairs with targeted failure feedback while keeping the best candidate, and degrades gracefully on budget exhaustion; improver validates proposals and accepts a trial winner only if it does not regress below baseline.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'getattr' is not allowed"
+  ],
+  "bar": 8.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 24,
+    "renamed": 24,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1143,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now screens candidates statically, repairs with concrete failing cases while keeping the best candidate, and degrades cleanly on budget exhaustion; improver validates and compiles proposals, rejects forbidden modules, and accepts only trial winners that do not regress below baseline.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: string naming a dunder ('\\\\b(import\\\\s+(os|sys|subprocess|socket|pa') is not allowed",
+   "improver.py: string naming a dunder ('\\\\b(import\\\\s+(os|sys|subprocess|socket|pa') is not allowed"
+  ],
+  "bar": 8.0
+ }
+]

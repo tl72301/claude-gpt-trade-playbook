@@ -1,0 +1,67 @@
+# Brain-Swap feasibility pilot (real models). Stage 2; run only after a GO
+# from the scout (scout.yaml).
+# A feasibility pilot measures costs, failure modes and variance. It is NOT
+# powered to detect specialization; see powered.yaml and DESIGN_BRAIN_SWAP.md.
+name: brain-swap-pilot-v2
+
+# Two families, weights fixed. Neither vendor publishes a dated snapshot for these
+# models, so every call records the served model id and any mismatch discards the
+# response.
+models:
+  A:
+    provider: anthropic
+    model: claude-haiku-5-5
+    effort: medium            # Haiku 5.5 default
+    max_tokens: 16000
+    mock_style: snake         # used only by --mock simulations
+  B:
+    provider: openai_compat
+    model: gpt-6.1-terra         # OpenAI's newest; no dated snapshot published, so served model is logged per call
+    api_key_env: OPENAI_API_KEY
+    max_tokens: 16000
+    extra_params: {reasoning_effort: low}   # keeps cost and behaviour closer to Haiku 5.5 (medium, adaptive)
+    mock_style: camel
+
+# Added to rsi's price table. Source: developers.openai.com/api/docs/models/gpt-6.1-terra (2026-10-29).
+prices_usd_per_mtok:
+  gpt-6.1-terra: {input: 1.00, output: 5.00, verified: true}
+  gemini-3.1-flash-lite: {input: 0.25, output: 1.50, verified: true}   # the cheaper alternative for B
+
+tasks:
+  seed: 20261029
+  partitions:                 # disjoint: no program appears in two partitions
+    evo_dev:      {n: 16, depths: [2, 3, 4]}   # evolution feedback + acceptance
+    evo_progress: {n: 20, depths: [2, 3, 4]}   # lineage progress (never shown to agents)
+    audit_dev:    {n: 16, depths: [2, 3, 4]}   # fresh development tasks for audits
+    sealed:       {n: 40, depths: [2, 3, 4]}   # audit scoring only; never shown to agents
+
+evolution:
+  require_proc_edit: true     # v2: every proposal must change improver.py (v1 scout: models never did unprompted)
+  lineages_per_model: 3       # lineages are the unit of replication; this is where money buys power
+  generations: 6
+
+baselines:
+  frozen_lineages_per_model: 1   # unchanged procedure improves the solver
+  onegen_lineages_per_model: 1   # same number of proposals, no chaining
+
+audits:
+  checkpoints: [6]               # gen 0 is always audited; must be <= evolution.generations
+  continuation_generations: 3    # equal for both operating models
+  presentations: [orig, norm]    # 'neutral' (length control) is in powered.yaml
+  replicates_per_cell: 1         # 2 would halve the noise
+  sealed_baseline_repeats: 2
+
+budgets:                         # identical for both models (calls and tokens, not dollars)
+  seed_repeats: 2
+  solver_budget:   {llm_calls: 3, output_tokens: 12000, checks: 4, wall_seconds: 180}
+  improver_budget: {llm_calls: 3, output_tokens: 36000, trial_tasks: 8, wall_seconds: 900}
+
+limits:
+  max_usd_total: null           # spend cap in dollars: set your own
+  max_usd_per_model: null      # optional per-vendor caps, e.g. {A: 20, B: 20}
+
+sandbox:
+  isolation: bwrap
+  mem_mb: 1024
+workers: 8
+parallel_lines: 2

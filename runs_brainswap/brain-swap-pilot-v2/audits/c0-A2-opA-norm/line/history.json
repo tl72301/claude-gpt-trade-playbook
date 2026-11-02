@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   7,
+   7
+  ],
+  "bar": 7.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now verifies against shown examples with a repair loop; improver diagnoses failures, selects among candidates by trial, and keeps a lesson list. Next: check whether the repair loop lifts pass rate and tune trial budget.",
+  "dev": [
+   9,
+   10
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 13,
+    "renamed": 13,
+    "unsupported": {},
+    "tokens_before": 716,
+    "tokens_after": 701,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 20,
+    "renamed": 20,
+    "unsupported": {},
+    "tokens_before": 1211,
+    "tokens_after": 1176,
+    "coverage": 1.0
+   }
+  },
+  "note": "Key lesson: failures split into no-function (extraction/format) and hidden-overfit (rule fits shown examples only); the solver now extracts code robustly, returns its best-so-far attempt, and checks edge cases; next priority is measuring whether the hidden-overfit tasks improve.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 9.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 13,
+    "renamed": 13,
+    "unsupported": {},
+    "tokens_before": 716,
+    "tokens_after": 701,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 20,
+    "renamed": 20,
+    "unsupported": {},
+    "tokens_before": 1211,
+    "tokens_after": 1176,
+    "coverage": 1.0
+   }
+  },
+  "note": "Key lesson: failures are mixed: three tasks had no extractable function (format/parsing) and several rules were guessed without verification; next priority is confirming the no-function fix and measuring whether the hidden-overfit tasks improve with explicit hand-testing.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 9.5
+ }
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   12,
+   12
+  ],
+  "bar": 12.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1352,
+    "tokens_after": 1352,
+    "coverage": 1.0
+   }
+  },
+  "note": "Encourage systematic rule inference and repair failures on shown examples without memorizing tasks.",
+  "dev": [
+   14,
+   14
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 14.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 718,
+    "tokens_after": 718,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1357,
+    "tokens_after": 1357,
+    "coverage": 1.0
+   }
+  },
+  "note": "Encourage composed-rule inference and review plausible overfitting while preserving checked candidates.",
+  "dev": [
+   14
+  ],
+  "status": "rejected",
+  "bar": 14.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 718,
+    "tokens_after": 718,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1357,
+    "tokens_after": 1357,
+    "coverage": 1.0
+   }
+  },
+  "note": "Explore competing rules when budget permits and retain a checked candidate when adjudication fails.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'locals' is not allowed"
+  ],
+  "bar": 14.0
+ }
+]

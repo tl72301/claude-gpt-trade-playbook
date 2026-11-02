@@ -1,0 +1,242 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   3,
+   3
+  ],
+  "bar": 3.0,
+  "progress": 6
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 2: check which failure patterns recur (wrong rule vs. wrong name) and tune solver hints and retry feedback accordingly.",
+  "dev": [
+   4,
+   6
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 7,
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1013,
+    "tokens_after": 1013,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1635,
+    "tokens_after": 1635,
+    "coverage": 1.0
+   }
+  },
+  "note": "Dominant failure is wrong_rule (7 of 12 failed tasks); 5 others were 'no function f', now repaired by aliasing the misnamed def to f, and the solver keeps its best attempt across retries.",
+  "dev": [
+   6,
+   3
+  ],
+  "status": "rejected_confirmation",
+  "bar": 5.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1013,
+    "tokens_after": 1013,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1635,
+    "tokens_after": 1635,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: the dominant failure was wrong_rule (no_f is fixed by aliasing); next, check whether the explicit-rule and length-check prompt reduces wrong_rule failures.",
+  "dev": [
+   6,
+   6
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 6,
+  "bar": 6.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1408,
+    "tokens_after": 1408,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4 dominant pattern is wrong_rule (4 pure plus 6 with wrong length); solver now derives the length rule first, reports length mismatches in feedback, and gets 4 attempts, and the improver focuses its prompt on the most frequent pattern in history.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 6.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1408,
+    "tokens_after": 1408,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6: dominant pattern is wrong_rule (10 of 16 failed, 6 with wrong length); solver now enumerates candidate rules, states the length rule first, replaces failed rules instead of patching them, and the improver targets the historical dominant pattern.",
+  "dev": [
+   6
+  ],
+  "status": "rejected",
+  "bar": 6.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1408,
+    "tokens_after": 1408,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2062,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: dominant pattern is wrong_rule (value rules, plus length errors); solver now shows a length table, enumerates and rejects candidate rules, and the improver focuses its prompt on the dominant pattern over history.",
+  "dev": [
+   7,
+   5
+  ],
+  "status": "rejected_confirmation",
+  "bar": 6.0
+ }
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   11
+  ],
+  "bar": 10.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use trials to compare future proposals; monitor review-call cost and hidden-test generalization.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: syntax error: unmatched ')' (line 52)"
+  ],
+  "bar": 10.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare generalization-focused proposals with trials; use all examples and repair visible failures.",
+  "dev": [
+   12,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 10,
+    "renamed": 10,
+    "unsupported": {},
+    "tokens_before": 632,
+    "tokens_after": 616,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 22,
+    "renamed": 22,
+    "unsupported": {},
+    "tokens_before": 1152,
+    "tokens_after": 1089,
+    "coverage": 1.0
+   }
+  },
+  "note": "Encourage systematic comparison of compositional rules and reserve trial budget for competing proposals.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ }
+]

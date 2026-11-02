@@ -1,0 +1,237 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   7,
+   7
+  ],
+  "bar": 7.0,
+  "progress": 10
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen1 added reasoning, check-retry loop (4 attempts), hints on windowed ops; improver now trials 2 candidates on 6 tasks. Next: inspect failures for specific patterns.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 7.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen2: check-retry with best-attempt tracking, rule-inference hints, improver trials 2 candidates on 6 tasks; next, study which windowed rules still fail.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 7.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen3: solver uses 4-attempt check-retry with best tracking and windowed-rule hints; improver trials 2 candidates on 6 tasks with exception safety.",
+  "dev": [
+   8,
+   9
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 15,
+  "bar": 8.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 744,
+    "tokens_after": 744,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1008,
+    "tokens_after": 1008,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen5: solver has 5 attempts, filter/window hints, multi-failure feedback; improver trials 3 candidates on 8 tasks.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 8.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 744,
+    "tokens_after": 744,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1008,
+    "tokens_after": 1008,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen5: solver has 5 attempts, filter/flag/sign rule hints, multi-failure feedback; improver trials 3 candidates on 8 tasks.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 8.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 744,
+    "tokens_after": 744,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1008,
+    "tokens_after": 1008,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen7: solver has 5 attempts, table-analysis prompt, filter/conditional hints, multi-failure feedback; improver trials 3 candidates on 8 tasks.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 8.5
+ }
+]

@@ -1,0 +1,21 @@
+# Shared settings for the harness in rsi/, which the Brain-Swap Test builds on.
+#
+# Vendor list prices per million tokens. The harness uses these only to enforce the
+# spending caps in each run config (limits.max_usd_total). Check them against the
+# vendors' pricing pages before a real run.
+prices_usd_per_mtok:
+  claude-fable-5:    {input: 10,   output: 50,   verified: true}
+  claude-opus-5-5:   {input: 4,    output: 20,   verified: true}
+  claude-opus-5:     {input: 5,    output: 25,   verified: true}
+  claude-opus-4:     {input: 5,    output: 25,   verified: true}
+  claude-sonnet-5-5: {input: 2,    output: 10,   verified: true}
+  claude-haiku-5-5:  {input: 0.10, output: 0.50, verified: true,
+                      long_prompt: {over_tokens: 100000, input: 0.50, output: 2.50}}
+  default:           {input: 15,   output: 75,   verified: false}  # conservative for unlisted models
+
+eval:
+  workers: 8
+
+sandbox:
+  isolation: auto              # auto | bwrap | none. Real runs must use bwrap (CI installs it).
+  mem_mb: 1024

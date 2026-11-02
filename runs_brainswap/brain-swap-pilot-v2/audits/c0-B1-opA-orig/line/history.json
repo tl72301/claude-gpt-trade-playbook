@@ -1,0 +1,126 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   9,
+   7
+  ],
+  "bar": 8.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the verify-and-retry solver fixed the no-function failures; if hidden-test failures persist, push for general rules and tune TRIAL_TASKS against budget.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether hidden-test overfitting (d3de317a96, 1b675d17e4, 89172a5e56) drops after the general-rule hints; if not, try showing a rule-search step before code.",
+  "dev": [
+   9,
+   10
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 775,
+    "tokens_after": 775,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1183,
+    "tokens_after": 1183,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: check whether the rule-first prompt and best-so-far fallback reduce hidden-test overfitting (d3de317a96, 1b675d17e4, 89172a5e56, 282772f2a5).",
+  "dev": [
+   10,
+   8
+  ],
+  "status": "rejected_confirmation",
+  "bar": 9.5
+ }
+]

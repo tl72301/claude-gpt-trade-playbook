@@ -1,0 +1,15 @@
+# SIMULATION at a powered scale (mock models). Shows what a detection looks like
+# when a large effect is built in. Much larger than this project's real runs.
+extends: powered.yaml
+name: brain-swap-powered-SIMULATED
+evolution: {lineages_per_model: 16, generations: 8}
+baselines: {frozen_lineages_per_model: 4, onegen_lineages_per_model: 2}
+audits:
+  checkpoints: [8]
+  continuation_generations: 3
+  presentations: [orig, norm, neutral]
+  replicates_per_cell: 2
+  sealed_baseline_repeats: 2
+sandbox: {isolation: inprocess}
+workers: 4
+parallel_lines: 1

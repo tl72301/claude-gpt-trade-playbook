@@ -1,0 +1,127 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   8
+  ],
+  "bar": 8.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1308,
+    "tokens_after": 1308,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use the checker to keep the best-scoring attempt and give the model concrete failing examples, but treat shown-example passes as necessary, not sufficient; prefer the simplest general rule and hand-trace it before answering.",
+  "dev": [
+   9,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 8.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1172,
+    "tokens_after": 1172,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1583,
+    "tokens_after": 1583,
+    "coverage": 1.0
+   }
+  },
+  "note": "Reject solutions that don't reference their input or lack def f before spending checks; ask for a one-sentence rule with index mapping, and only replace the incumbent when a trial beats it on the same task count.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 8.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1172,
+    "tokens_after": 1172,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1583,
+    "tokens_after": 1583,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate solver structure before spending checks, keep the first fully consistent rule, and accept a rewrite only when it beats the incumbent on the same trial task count.",
+  "dev": [
+   9,
+   10
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.5
+ }
+]

@@ -1,0 +1,128 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   6
+  ],
+  "bar": 7.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 2: check-driven repair loop in the solver; next, verify whether failing-example feedback raises the solve count and tune hints from results.",
+  "dev": [
+   8,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 7.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 19,
+    "renamed": 19,
+    "unsupported": {},
+    "tokens_before": 749,
+    "tokens_after": 711,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 19,
+    "renamed": 19,
+    "unsupported": {},
+    "tokens_before": 1074,
+    "tokens_after": 1036,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: repair loop now shows the previous code and five failing examples with 5 attempts and a rule-focused hint; next, check whether the solve count rises and tune hints per failure type.",
+  "dev": [
+   8,
+   7
+  ],
+  "status": "rejected_confirmation",
+  "bar": 7.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 19,
+    "renamed": 19,
+    "unsupported": {},
+    "tokens_before": 749,
+    "tokens_after": 711,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 19,
+    "renamed": 19,
+    "unsupported": {},
+    "tokens_before": 1074,
+    "tokens_after": 1036,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: measure whether the five-attempt feedback loop with previous code raises the solve count, and add a no-function fallback test for the bc2b55b74f-style failures.",
+  "dev": [
+   9,
+   10
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.5
+ }
+]

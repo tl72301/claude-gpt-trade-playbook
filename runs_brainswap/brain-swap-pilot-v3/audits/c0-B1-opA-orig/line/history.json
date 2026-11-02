@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   9,
+   9
+  ],
+  "bar": 9.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen1 added retries with check feedback, \"def f\" validation, and trial-based candidate selection; verify the gains next round.",
+  "dev": [
+   12,
+   13
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 637,
+    "tokens_after": 637,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1033,
+    "tokens_after": 1033,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen2: more attempts, stronger extraction, length-check hints; verify whether the 4 failures (no function f, overfit) improved.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 12.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 637,
+    "tokens_after": 637,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1033,
+    "tokens_after": 1033,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen3: 5 attempts, stronger extraction, hypothesis-switching feedback, length/window hints; trial 8 tasks. Verify whether the 4 failures improved.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 12.5
+ }
+]

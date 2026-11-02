@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   7
+  ],
+  "bar": 7.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1126,
+    "tokens_after": 1126,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial scores across candidates and focus on hidden-test generalization.",
+  "dev": [
+   8,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 8.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 590,
+    "tokens_after": 590,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1075,
+    "tokens_after": 1075,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial candidates while retaining the best validated solver attempt under budget exhaustion.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ }
+]

@@ -1,0 +1,127 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   13,
+   9
+  ],
+  "bar": 11.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1352,
+    "tokens_after": 1352,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now reasons about the rule, uses check-driven retries (3 attempts) with prior code in feedback, and generalization hints; improver prompt clarifies that improver.py must differ.",
+  "dev": [
+   13,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 635,
+    "tokens_after": 635,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1342,
+    "tokens_after": 1342,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now prefers code blocks containing def f, retries when missing, and hints at window size via output length; improver gets a comment tweak.",
+  "dev": [
+   14,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 13.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 857,
+    "tokens_after": 857,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1362,
+    "tokens_after": 1362,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver: hints for conditional/variable-length rules and multi-candidate rule comparison; retry shows up to 3 failing cases; improver comment tweak.",
+  "dev": [
+   12
+  ],
+  "status": "rejected",
+  "bar": 13.0
+ }
+]

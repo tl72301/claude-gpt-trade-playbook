@@ -1,0 +1,11 @@
+{
+ "name": "evolution-A0",
+ "model": "claude-haiku-5-5",
+ "mode": "full",
+ "presentation": "orig",
+ "generations": 6,
+ "final_bar": 3.0,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-29T22:49:51+00:00"
+}

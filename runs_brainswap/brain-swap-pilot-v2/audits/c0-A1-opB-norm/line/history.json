@@ -1,0 +1,124 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   11,
+   11
+  ],
+  "bar": 11.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use trial feedback and all failed examples to improve generalization; validate generated source before returning it.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: syntax error: unmatched ')' (line 31)",
+   "improver.py: syntax error: unmatched ')' (line 51)"
+  ],
+  "bar": 11.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use all failed examples and budgeted trials to select general improvements.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: syntax error: unmatched ')' (line 55)"
+  ],
+  "bar": 11.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial feedback and inspect syntax before proposing future rewrites.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: syntax error: unmatched ')' (line 33)"
+  ],
+  "bar": 11.0
+ }
+]

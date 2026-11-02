@@ -1,0 +1,243 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   3,
+   3
+  ],
+  "bar": 3.0,
+  "progress": 6
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use budget-aware trials to compare substantially different generalization strategies.",
+  "dev": [
+   5,
+   6
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 9,
+  "bar": 5.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1298,
+    "tokens_after": 1298,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1317,
+    "tokens_after": 1317,
+    "coverage": 1.0
+   }
+  },
+  "note": "Strengthen independent rule review and verification; compare syntactically valid improvements with budget-aware trials.",
+  "dev": [
+   6,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 7,
+  "bar": 6.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1549,
+    "tokens_after": 1549,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1366,
+    "tokens_after": 1366,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use independent candidate generation and a final comparison to reduce anchoring and improve generalization.",
+  "dev": [
+   8,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 9,
+  "bar": 7.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1535,
+    "tokens_after": 1535,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1393,
+    "tokens_after": 1393,
+    "coverage": 1.0
+   }
+  },
+  "note": "Strengthen independent hypothesis search and review, including composed rules and negative-number arithmetic.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 7.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1535,
+    "tokens_after": 1535,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1393,
+    "tokens_after": 1393,
+    "coverage": 1.0
+   }
+  },
+  "note": "Emphasize independent rule discovery, composed index arithmetic, and skepticism of coincidentally identical outputs.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 7.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1535,
+    "tokens_after": 1535,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1393,
+    "tokens_after": 1393,
+    "coverage": 1.0
+   }
+  },
+  "note": "Strengthen independent hypothesis search for index-value compositions and ambiguous aggregate outputs.",
+  "dev": [
+   6
+  ],
+  "status": "rejected",
+  "bar": 7.5
+ }
+]

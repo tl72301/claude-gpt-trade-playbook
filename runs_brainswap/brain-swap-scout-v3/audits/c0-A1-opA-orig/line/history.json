@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   5,
+   5
+  ],
+  "bar": 5.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check solver outputs against examples and retry with concrete failures; next, verify whether the two-candidate trial selection actually raises the solved count.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'exec' is not allowed"
+  ],
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now self-checks against shown examples over 3 attempts with concrete mismatches; next, measure whether the check loop raises solved count and tune the improver's history logging.",
+  "dev": [
+   7,
+   5
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 6.0
+ }
+]

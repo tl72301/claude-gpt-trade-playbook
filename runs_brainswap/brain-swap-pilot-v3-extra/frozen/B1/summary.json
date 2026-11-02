@@ -1,0 +1,11 @@
+{
+ "name": "frozen-B1",
+ "model": "gpt-6.1-terra",
+ "mode": "frozen",
+ "presentation": "orig",
+ "generations": 6,
+ "final_bar": 11.5,
+ "accepted": 2,
+ "proc_edits_accepted": 0,
+ "finished_at": "2026-11-02T06:25:38+00:00"
+}

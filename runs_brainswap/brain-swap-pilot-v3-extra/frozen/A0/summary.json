@@ -1,0 +1,11 @@
+{
+ "name": "frozen-A0",
+ "model": "claude-sonnet-5-5",
+ "mode": "frozen",
+ "presentation": "orig",
+ "generations": 6,
+ "final_bar": 8.0,
+ "accepted": 1,
+ "proc_edits_accepted": 0,
+ "finished_at": "2026-11-02T05:54:11+00:00"
+}

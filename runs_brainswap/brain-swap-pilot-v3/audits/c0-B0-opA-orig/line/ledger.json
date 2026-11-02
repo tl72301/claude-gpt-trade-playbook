@@ -1,0 +1,17 @@
+{
+ "dev/solver/claude-sonnet-5-5": {
+  "calls": 150,
+  "refused": 9,
+  "mismatch": 0
+ },
+ "improver/improver/claude-sonnet-5-5": {
+  "calls": 5,
+  "refused": 0,
+  "mismatch": 0
+ },
+ "improver:trial/solver/claude-sonnet-5-5": {
+  "calls": 26,
+  "refused": 6,
+  "mismatch": 0
+ }
+}

@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   4
+  ],
+  "bar": 4.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether API-check repair loop raised solve count; if trials are cheap, widen candidates and record which failure patterns (empty outputs, wrong lengths, missing def f) persist.",
+  "dev": [
+   5,
+   5
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 979,
+    "tokens_after": 979,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1539,
+    "tokens_after": 1539,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the no-function failures disappear after the solver's f-aliasing; if wrong_output persists, target rule search over all examples.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 5.0
+ }
+]

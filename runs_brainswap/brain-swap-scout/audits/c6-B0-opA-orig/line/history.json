@@ -1,0 +1,89 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   6,
+   4
+  ],
+  "bar": 5.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1094,
+    "tokens_after": 1094,
+    "coverage": 1.0
+   }
+  },
+  "note": "",
+  "dev": [
+   6,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "bar": 6.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1020,
+    "tokens_after": 1020,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1094,
+    "tokens_after": 1094,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: check whether solver v3 fixes 'no function f' failures via block selection; if hidden-test failures persist, test rules that depend on index or running state.",
+  "dev": [
+   7,
+   6
+  ],
+  "status": "rejected_confirmation",
+  "bar": 6.5
+ }
+]

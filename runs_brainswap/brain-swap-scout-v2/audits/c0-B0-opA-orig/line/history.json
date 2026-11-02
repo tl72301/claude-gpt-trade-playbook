@@ -1,0 +1,90 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   6
+  ],
+  "bar": 5.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether check-driven retries raised solved count; if trials are affordable, tune solver hints by failure type.",
+  "dev": [
+   6,
+   5
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 5.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 877,
+    "tokens_after": 877,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1585,
+    "tokens_after": 1585,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the 'no function f' failures disappeared and whether length/order hints raised solved count; keep trial-based ranking and tune hints by failure type.",
+  "dev": [
+   8,
+   6
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 7.0
+ }
+]

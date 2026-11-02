@@ -1,0 +1,27 @@
+{
+ "model": "claude-haiku-5-5",
+ "seed_solved": "1/3",
+ "improver_status": "ok",
+ "files_returned": [
+  "solver.py"
+ ],
+ "refusals": 0,
+ "mismatches": 0,
+ "served": [
+  "claude-haiku-5-5"
+ ]
+}
+{
+ "model": "gpt-6.1-terra",
+ "seed_solved": "2/3",
+ "improver_status": "ok",
+ "files_returned": [
+  "solver.py"
+ ],
+ "refusals": 0,
+ "mismatches": 0,
+ "served": [
+  "gpt-6.1-terra"
+ ]
+}
+preflight: OK

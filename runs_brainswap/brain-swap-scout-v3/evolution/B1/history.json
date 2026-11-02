@@ -1,0 +1,244 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   3,
+   3
+  ],
+  "bar": 3.0,
+  "progress": 5
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use independent rule review and example checks; compare future candidates with trials.",
+  "dev": [
+   5,
+   3
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 6,
+  "bar": 4.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1062,
+    "tokens_after": 1062,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1292,
+    "tokens_after": 1292,
+    "coverage": 1.0
+   }
+  },
+  "note": "Generate independent hypotheses, verify examples, and critically review generalization before selecting a solution.",
+  "dev": [
+   7,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 9,
+  "bar": 7.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1288,
+    "tokens_after": 1288,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1337,
+    "tokens_after": 1337,
+    "coverage": 1.0
+   }
+  },
+  "note": "Broaden hypothesis search and validate generated function syntax before checking or returning it.",
+  "dev": [
+   8,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 8,
+  "bar": 8.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1469,
+    "tokens_after": 1469,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1507,
+    "tokens_after": 1507,
+    "coverage": 1.0
+   }
+  },
+  "note": "Expand hypothesis search to cumulative state and distinguish counts from modular or Boolean aggregates.",
+  "dev": [
+   6
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1469,
+    "tokens_after": 1469,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1507,
+    "tokens_after": 1507,
+    "coverage": 1.0
+   }
+  },
+  "note": "Broaden independent hypothesis search to cumulative state and modular counts, while retaining example checks and budget handling.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1469,
+    "tokens_after": 1469,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1507,
+    "tokens_after": 1507,
+    "coverage": 1.0
+   }
+  },
+  "note": "Broaden hypothesis search to stateful scans and counts of pairs or windows, while retaining example checks and budget handling.",
+  "dev": [
+   9,
+   7
+  ],
+  "status": "rejected_confirmation",
+  "bar": 8.0
+ }
+]

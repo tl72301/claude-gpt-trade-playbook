@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   5,
+   4
+  ],
+  "bar": 4.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether check-feedback loops help; if multi-attempt doesn't raise the count, try asking for an explicit rule description before code.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 4.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "If the check-feedback loop helped, keep it and next try adding a second independent candidate per task; if not, drop the repair step and try several diverse rule hypotheses.",
+  "dev": [
+   5,
+   5
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "bar": 5.0
+ }
+]

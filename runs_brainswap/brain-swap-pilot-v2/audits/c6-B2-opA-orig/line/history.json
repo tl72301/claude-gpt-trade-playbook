@@ -1,0 +1,123 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   8
+  ],
+  "bar": 8.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now iterates on check feedback with failing-example details and keeps the best candidate under budget limits; improver handles missing budget keys and trial errors and stops early on perfect trials.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 8.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now generates several hypotheses, verifies each on shown examples via check with failure feedback, and falls back safely; improver guards trial/budget errors and stops early on a perfect trial.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'getattr' is not allowed"
+  ],
+  "bar": 8.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1198,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now proposes simplest-rule hypotheses, verifies them on shown examples with feedback-driven retries and a safe fallback; improver validates proposals syntactically and guards budget and trial errors.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'getattr' is not allowed"
+  ],
+  "bar": 8.0
+ }
+]

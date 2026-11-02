@@ -1,0 +1,244 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   6
+  ],
+  "bar": 5.0,
+  "progress": 6
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Trial general inference strategies; inspect failed examples and preserve budget for repairs.",
+  "dev": [
+   8,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 8,
+  "bar": 7.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1063,
+    "tokens_after": 1063,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated code before checking it, and distinguish invalid responses from incorrect rules. Scrutinize ambiguous constant-looking outputs and compare competing hypotheses. Trial future proposals on equal-sized task sets when budget permits. Proposal 1: 0/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "solver.py: use of 'compile' is not allowed",
+   "improver.py: import of 'ast' is not allowed",
+   "improver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 7.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1063,
+    "tokens_after": 1063,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated code before checking; repair unusable responses separately from incorrect rules. Scrutinize ambiguous constant-looking outputs. Compare proposal trials at equal sizes when budget allows. Proposal 1: 0/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 7.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1063,
+    "tokens_after": 1063,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "The solver validates generated syntax before checking, retains a passing candidate during review, and explicitly compares ambiguous rules. Fix the improver's parse function before use. Proposal 1: 0/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: syntax error: invalid syntax (line 16)"
+  ],
+  "bar": 7.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1063,
+    "tokens_after": 1063,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate extracted functions before checks, preserve a passing candidate during review, and investigate ambiguity without hardcoding. Trial outcomes should be interpreted cautiously when task sets differ. Proposal 1: 0/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 7.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1063,
+    "tokens_after": 1063,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "Validate generated code before checking, keep a passing candidate during review, and compare hypotheses when examples admit accidental constant-looking fits. Compare trials at equal task counts where budget permits. Proposal 1: 0/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 7.5
+ }
+]

@@ -1,0 +1,131 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   7,
+   6
+  ],
+  "bar": 6.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 23,
+    "renamed": 6,
+    "unsupported": {
+     "improve": "nested function/lambda/class"
+    },
+    "tokens_before": 1308,
+    "tokens_after": 1303,
+    "coverage": 0.261
+   }
+  },
+  "note": "Use api.check as a verifier: keep any candidate that fits all shown examples, feed the first concrete failure back with the previous code, and return the best checked candidate when later attempts fail or the budget runs out.",
+  "dev": [
+   9,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 10.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 17,
+    "unsupported": {},
+    "tokens_before": 1153,
+    "tokens_after": 1106,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 8,
+    "unsupported": {
+     "improve": "nested function/lambda/class"
+    },
+    "tokens_before": 1472,
+    "tokens_after": 1461,
+    "coverage": 0.32
+   }
+  },
+  "note": "Extraction now takes the last code block that defines f and aliases a differently named top-level def to f; check on every attempt, feed back up to four concrete failures, and keep the best checked candidate, since the 'no function f' failure is a naming problem, not a reasoning one.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 10.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 17,
+    "unsupported": {},
+    "tokens_before": 1153,
+    "tokens_after": 1106,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 8,
+    "unsupported": {
+     "improve": "nested function/lambda/class"
+    },
+    "tokens_before": 1472,
+    "tokens_after": 1461,
+    "coverage": 0.32
+   }
+  },
+  "note": "Keep the best checked candidate and prefer the simplest rule that fits every shown example; avoid constants or thresholds tuned to shown values, since hidden tests failed on those.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 10.5
+ }
+]

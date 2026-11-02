@@ -1,0 +1,11 @@
+{
+ "name": "c6-A1-opA-orig",
+ "model": "claude-haiku-5-5",
+ "mode": "full",
+ "presentation": "orig",
+ "generations": 3,
+ "final_bar": 9.0,
+ "accepted": 3,
+ "proc_edits_accepted": 3,
+ "finished_at": "2026-10-30T08:00:17+00:00"
+}

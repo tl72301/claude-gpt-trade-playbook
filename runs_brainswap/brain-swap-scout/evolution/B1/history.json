@@ -1,0 +1,237 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   6
+  ],
+  "bar": 5.0,
+  "progress": 6
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use shown-example checks to repair candidates; future generations should trial alternative inference prompts and compare hidden-task performance.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: syntax error: unmatched ')' (line 45)"
+  ],
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare alternative inference prompts with trials; shown-example checks cannot detect hidden overfitting.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: syntax error: unmatched ')' (line 34)"
+  ],
+  "bar": 5.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Trial alternative inference prompts; shown-example validation alone cannot detect hidden-test overfitting.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 5.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Trial alternative inference prompts; shown-example checks cannot detect hidden-test overfitting.",
+  "dev": [
+   7,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "progress": 8,
+  "bar": 7.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 755,
+    "tokens_after": 755,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Try trials comparing independent review against single-call inference; example checks cannot detect hidden overfitting.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 7.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 755,
+    "tokens_after": 755,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Try independent rule review before accepting a candidate; compare alternative prompts with trials if budget permits.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 7.0
+ }
+]

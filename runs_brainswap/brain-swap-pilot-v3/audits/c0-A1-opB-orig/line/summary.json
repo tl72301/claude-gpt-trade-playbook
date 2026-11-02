@@ -1,0 +1,11 @@
+{
+ "name": "c0-A1-opB-orig",
+ "model": "gpt-6.1-terra",
+ "mode": "full",
+ "presentation": "orig",
+ "generations": 3,
+ "final_bar": 13.5,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T19:18:36+00:00"
+}

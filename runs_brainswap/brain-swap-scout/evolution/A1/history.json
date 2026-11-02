@@ -1,0 +1,240 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   2,
+   1
+  ],
+  "bar": 1.5,
+  "progress": 3
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now uses checked refinement (4 attempts) with robust extraction of the def f block; next, check whether hidden-test failures (generalisation) persist and consider adding candidate-rule enumeration or self-verification.",
+  "dev": [
+   3,
+   2
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "progress": 4,
+  "bar": 2.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 880,
+    "tokens_after": 880,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: solver now retries when no def f appears and always returns a def f; next check whether hidden-test failures persist, and consider self-verification or enumerating candidate rules per example.",
+  "dev": [
+   3,
+   3
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "progress": 5,
+  "bar": 3.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1088,
+    "tokens_after": 1088,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: solver now states the rule first, collects up to two candidates that fit all visible examples and returns the shortest; next check whether hidden-test failures (over-fitting) drop, and consider a held-out-style self-check of candidate rules.",
+  "dev": [
+   3
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1088,
+    "tokens_after": 1088,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: solver now states a one-line rule before coding and revises the rule when checks fail; next check whether hidden-test failures (overfitting) drop, and if not, try sampling several independent rule hypotheses and keeping the one that is simplest among those fitting all examples.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1088,
+    "tokens_after": 1088,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6: solver now states and hand-checks a one-line rule before coding and switches hypothesis after failures; next check whether hidden-test failures (overfitting) drop, and if not, have the improver test several independent rule hypotheses and keep the simplest that fits all examples.",
+  "dev": [
+   1
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1088,
+    "tokens_after": 1088,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: solver now draws 3 independent rule samples and returns the shortest one that fits all visible examples (Occam tie-break against overfitting), then refines from the best partial candidate; next check whether hidden-test failures drop, and if not, try asking for the rule in a fixed DSL-like vocabulary before coding.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 3.0
+ }
+]

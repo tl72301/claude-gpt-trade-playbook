@@ -1,0 +1,126 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   11
+  ],
+  "bar": 10.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use all shown examples and check candidate code; compare generalizable proposals with trials when budget allows.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: syntax error: unmatched ')' (line 53)"
+  ],
+  "bar": 10.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Use all examples, validate candidates, and compare future proposals with trials when available.",
+  "dev": [
+   13,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 11,
+    "renamed": 11,
+    "unsupported": {},
+    "tokens_before": 649,
+    "tokens_after": 631,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 23,
+    "renamed": 23,
+    "unsupported": {},
+    "tokens_before": 1120,
+    "tokens_after": 1059,
+    "coverage": 1.0
+   }
+  },
+  "note": "Keep example validation and add syntax checks and trial-based selection for future proposals.",
+  "dev": [
+   13,
+   11
+  ],
+  "status": "rejected_confirmation",
+  "bar": 12.5
+ }
+]

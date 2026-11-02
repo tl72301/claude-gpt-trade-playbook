@@ -1,0 +1,127 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   9,
+   10
+  ],
+  "bar": 9.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen1: solver now uses 4 attempts with check feedback and hints; improver samples 3 candidates and picks by an 8-task trial. Next: inspect which failing tasks remain and tailor hints.",
+  "dev": [
+   11,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 11.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 640,
+    "tokens_after": 640,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1028,
+    "tokens_after": 1028,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen2: solver now has 5 attempts, shows up to 3 failures per feedback, and has decomposition hints; improver uses 2 candidates and 6 trial tasks for speed. Next: examine remaining failures (window/product/cumulative rules).",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 640,
+    "tokens_after": 640,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1028,
+    "tokens_after": 1028,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen3: solver has 5 attempts, up to 3 failures per feedback, and composition hints; improver uses 2 candidates, 6 trial tasks, and stops early on a perfect trial. Next: check whether the remaining failures (windows/cumulative) improved.",
+  "dev": [
+   12,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.0
+ }
+]

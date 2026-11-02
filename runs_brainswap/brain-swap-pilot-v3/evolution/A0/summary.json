@@ -1,0 +1,11 @@
+{
+ "name": "evolution-A0",
+ "model": "claude-sonnet-5-5",
+ "mode": "full",
+ "presentation": "orig",
+ "generations": 6,
+ "final_bar": 7.5,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T15:44:18+00:00"
+}

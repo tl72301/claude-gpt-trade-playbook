@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   4
+  ],
+  "bar": 4.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 1 solver: check-feedback retries with failure details; improver: 2 candidates ranked by trial on 4 tasks, and requires a changed improver.py. Next: check which failure types remain and target them.",
+  "dev": [
+   6,
+   4
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 914,
+    "tokens_after": 914,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1572,
+    "tokens_after": 1572,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 2: robust code extraction, best-attempt tracking, and a no-constant rule target the remaining 'no function f' and placeholder failures; next, check length errors.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 5.0
+ }
+]

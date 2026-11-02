@@ -1,0 +1,27 @@
+name: ci
+
+# Every push: unit tests, the sandbox self-test, and a small offline simulation.
+# Needs no API keys.
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install bubblewrap (sandbox)
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q bubblewrap
+          # Ubuntu 24.04 blocks unprivileged user namespaces by default; bwrap needs them.
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Brain-Swap selftest and CI-scale simulation (no API)
+        run: |
+          python -m brainswap selftest
+          python -m brainswap simulate --scenario presentation --config ci.yaml

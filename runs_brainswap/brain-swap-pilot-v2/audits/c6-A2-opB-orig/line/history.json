@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   10
+  ],
+  "bar": 10.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1697,
+    "tokens_after": 1697,
+    "coverage": 1.0
+   }
+  },
+  "note": "Prioritize hidden-test rule inference; compare proposals on as many trial tasks as budget permits.",
+  "dev": [
+   13,
+   13
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 13.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 978,
+    "tokens_after": 978,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1313,
+    "tokens_after": 1313,
+    "coverage": 1.0
+   }
+  },
+  "note": "Audit example-passing rules for hidden-test generalization, retaining a checked fallback.",
+  "dev": [
+   13
+  ],
+  "status": "rejected",
+  "bar": 13.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 978,
+    "tokens_after": 978,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1313,
+    "tokens_after": 1313,
+    "coverage": 1.0
+   }
+  },
+  "note": "Audit example-passing rules for accidental correlations while retaining the checked candidate; compare distinct trialed proposals.",
+  "dev": [
+   12
+  ],
+  "status": "rejected",
+  "bar": 13.0
+ }
+]

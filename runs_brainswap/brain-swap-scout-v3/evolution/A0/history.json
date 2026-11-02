@@ -1,0 +1,237 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   1,
+   2
+  ],
+  "bar": 1.5,
+  "progress": 4
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether the solver's check-feedback retries raised the count, and whether trial-based candidate selection helps; then tighten the prompt on rule families.",
+  "dev": [
+   1
+  ],
+  "status": "rejected",
+  "bar": 1.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: measure whether check-feedback retries cut the 'no function f' failures; if rule-family errors persist, add per-family hint lists and try trial-based selection.",
+  "dev": [
+   2,
+   3
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 5,
+  "bar": 2.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1129,
+    "tokens_after": 1129,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1450,
+    "tokens_after": 1450,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: check whether the renamed-def fallback and the 4-attempt general-rule retries reduced 'no function f' and hidden-test over-fitting; if partial passes persist, add trial-based candidate selection.",
+  "dev": [
+   0
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1129,
+    "tokens_after": 1129,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1450,
+    "tokens_after": 1450,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: check whether 'no function f' failures vanished and whether partial passes persist; if so, add per-family rule hints and trial-based selection.",
+  "dev": [
+   0
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1129,
+    "tokens_after": 1129,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1450,
+    "tokens_after": 1450,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6: check whether 'no function f' is gone and whether hidden-test misses drop; next, add per-family rule hints and trial-based selection if misses persist.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1129,
+    "tokens_after": 1129,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1450,
+    "tokens_after": 1450,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: check whether 'no function f' is now zero and whether hidden-test misses fall; if rule-family errors persist, test per-family hint sets on the failing tasks.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ }
+]

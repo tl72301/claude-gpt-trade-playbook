@@ -1,0 +1,122 @@
+[
+ {
+  "name": "evolution-A0",
+  "model": "claude-sonnet-5-5",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 7.5,
+  "accepted": 1,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-30T15:44:18+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-A1",
+  "model": "claude-sonnet-5-5",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 8.5,
+  "accepted": 1,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-30T15:44:42+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-A2",
+  "model": "claude-sonnet-5-5",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 8.0,
+  "accepted": 1,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-30T16:02:21+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "frozen-A0",
+  "model": "claude-sonnet-5-5",
+  "mode": "frozen",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 9.0,
+  "accepted": 2,
+  "proc_edits_accepted": 0,
+  "finished_at": "2026-10-30T16:01:07+00:00",
+  "group": "frozen"
+ },
+ {
+  "name": "onegen-A0",
+  "model": "claude-sonnet-5-5",
+  "mode": "onegen",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 9.0,
+  "accepted": 1,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-30T16:13:55+00:00",
+  "group": "onegen"
+ },
+ {
+  "name": "evolution-B0",
+  "model": "gpt-6.1-terra",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 11.0,
+  "accepted": 1,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-30T16:35:10+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-B1",
+  "model": "gpt-6.1-terra",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 10.5,
+  "accepted": 2,
+  "proc_edits_accepted": 2,
+  "finished_at": "2026-10-30T16:41:32+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "evolution-B2",
+  "model": "gpt-6.1-terra",
+  "mode": "full",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 12.0,
+  "accepted": 1,
+  "proc_edits_accepted": 1,
+  "finished_at": "2026-10-30T17:00:36+00:00",
+  "group": "evolution"
+ },
+ {
+  "name": "frozen-B0",
+  "model": "gpt-6.1-terra",
+  "mode": "frozen",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 12.0,
+  "accepted": 2,
+  "proc_edits_accepted": 0,
+  "finished_at": "2026-10-30T17:03:20+00:00",
+  "group": "frozen"
+ },
+ {
+  "name": "onegen-B0",
+  "model": "gpt-6.1-terra",
+  "mode": "onegen",
+  "presentation": "orig",
+  "generations": 6,
+  "final_bar": 11.0,
+  "accepted": 2,
+  "proc_edits_accepted": 2,
+  "finished_at": "2026-10-30T17:17:50+00:00",
+  "group": "onegen"
+ }
+]

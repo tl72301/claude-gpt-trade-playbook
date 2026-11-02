@@ -1,0 +1,239 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   1,
+   3
+  ],
+  "bar": 2.0,
+  "progress": 4
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 1 solver: check-driven repair over 3 attempts plus robust def-f extraction; improver: 2 candidates selected by trial and failure summaries. Next: confirm 'no function f' failures vanished, then tune hints for hidden-test failures.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: access to private attribute '__name__' is not allowed"
+  ],
+  "bar": 2.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether 'no function f' failures vanished, then tune hints against the hidden-test failures in the numeric and length-changing tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 2.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check the 'no function f' failures next: the solver now falls back to any text containing def f, and I will verify whether those failures vanished before tuning hints.",
+  "dev": [
+   3,
+   2
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 6,
+  "bar": 2.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 948,
+    "tokens_after": 948,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1497,
+    "tokens_after": 1497,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: solver keeps its best candidate, re-asks when def f is missing, and checks whether hidden-test failures fall after the generalisation hint.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 948,
+    "tokens_after": 948,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1497,
+    "tokens_after": 1497,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: solver checks for a real def f via ast and re-asks if missing, keeps its best-scoring candidate over 4 attempts; next, verify whether 'no function f' failures vanished and whether hidden-test scores rise.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed"
+  ],
+  "bar": 2.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 948,
+    "tokens_after": 948,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1497,
+    "tokens_after": 1497,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6 solver re-asks when def f is invalid and keeps its best candidate; next, check whether 'no function f' failures vanished and whether hidden-test counts rise on length-changing tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: import of 'ast' is not allowed",
+   "improver.py: import of 'ast' is not allowed",
+   "improver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 2.5
+ }
+]

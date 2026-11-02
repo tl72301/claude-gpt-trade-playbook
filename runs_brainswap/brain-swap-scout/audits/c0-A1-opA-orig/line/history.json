@@ -1,0 +1,87 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   5
+  ],
+  "bar": 4.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether three attempts with checker feedback raised the solved count; if budget is tight, reduce ATTEMPTS before touching the prompt.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 4.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether the checker-driven repair loop (ATTEMPTS=3) raised the solved count; if it did not, test a larger hint set or per-task sampling before touching improver.py.",
+  "dev": [
+   5,
+   4
+  ],
+  "status": "rejected_confirmation",
+  "bar": 4.5
+ }
+]

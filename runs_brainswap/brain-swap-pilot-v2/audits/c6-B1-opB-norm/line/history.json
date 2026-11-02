@@ -1,0 +1,135 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   11,
+   11
+  ],
+  "bar": 11.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 23,
+    "renamed": 6,
+    "unsupported": {
+     "improve": "nested function/lambda/class"
+    },
+    "tokens_before": 1308,
+    "tokens_after": 1303,
+    "coverage": 0.261
+   }
+  },
+  "note": "Use shown-example checks to catch implementation errors, while treating hidden-rule ambiguity as a separate problem.",
+  "dev": [
+   13,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 2,
+    "unsupported": {
+     "solve": "call to compile()"
+    },
+    "tokens_before": 993,
+    "tokens_after": 989,
+    "coverage": 0.118
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 24,
+    "renamed": 6,
+    "unsupported": {
+     "improve": "call to compile()"
+    },
+    "tokens_before": 1302,
+    "tokens_after": 1286,
+    "coverage": 0.25
+   }
+  },
+  "note": "Compare competing rules on boundary inputs, not only on whether they fit the shown examples.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 12.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 2,
+    "unsupported": {
+     "solve": "call to compile()"
+    },
+    "tokens_before": 993,
+    "tokens_after": 989,
+    "coverage": 0.118
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 24,
+    "renamed": 6,
+    "unsupported": {
+     "improve": "call to compile()"
+    },
+    "tokens_before": 1302,
+    "tokens_after": 1286,
+    "coverage": 0.25
+   }
+  },
+  "note": "Evaluate independent rule review against the baseline; example agreement alone cannot resolve hidden-rule ambiguity.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 12.5
+ }
+]

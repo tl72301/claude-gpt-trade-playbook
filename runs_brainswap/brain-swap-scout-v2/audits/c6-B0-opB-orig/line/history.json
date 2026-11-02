@@ -1,0 +1,86 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   7
+  ],
+  "bar": 7.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "The solver now checks examples and repairs failures when budget permits. Trials compare proposals on equal-sized sets where possible; shown-example success does not guarantee hidden-test generalization. Proposal 1: 7/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 7.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "The solver explicitly considers positional rules, output order, and ambiguous boundaries, and repairs shown-example failures when checks are available. Trial scores are compared as proportions; untrialed proposals do not displace trialed ones. Proposal 1: 5/8 trial tasks.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 7.5
+ }
+]

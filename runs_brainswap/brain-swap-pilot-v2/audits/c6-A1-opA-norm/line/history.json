@@ -1,0 +1,129 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   6,
+   7
+  ],
+  "bar": 6.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 30,
+    "renamed": 30,
+    "unsupported": {},
+    "tokens_before": 2062,
+    "tokens_after": 2017,
+    "coverage": 1.0
+   }
+  },
+  "note": "Dominant pattern was wrong_rule; the solver had no check feedback and the classifier mislabeled most wrong rules as length errors, so next I'll check whether feedback-driven retries cut wrong-rule failures.",
+  "dev": [
+   9,
+   9
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 17,
+    "unsupported": {},
+    "tokens_before": 899,
+    "tokens_after": 871,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 31,
+    "renamed": 30,
+    "unsupported": {
+     "dominant_advice": "nested function/lambda/class"
+    },
+    "tokens_before": 2285,
+    "tokens_after": 2287,
+    "coverage": 0.968
+   }
+  },
+  "note": "Dominant pattern was wrong_rule_wrong_length; next, check whether the explicit length-rule step and the tighter no_f classifier reduce it.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 17,
+    "unsupported": {},
+    "tokens_before": 899,
+    "tokens_after": 871,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 31,
+    "renamed": 30,
+    "unsupported": {
+     "dominant_advice": "nested function/lambda/class"
+    },
+    "tokens_before": 2285,
+    "tokens_after": 2287,
+    "coverage": 0.968
+   }
+  },
+  "note": "Gen 5: dominant pattern is wrong_rule_wrong_length; solver now states the length rule first and retries replies with no def f.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ }
+]

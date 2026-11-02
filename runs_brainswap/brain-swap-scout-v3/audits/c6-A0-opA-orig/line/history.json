@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   4
+  ],
+  "bar": 4.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1450,
+    "tokens_after": 1450,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: group remaining solver failures by pattern (length, sign, ordering) and test whether check-feedback retries fix them.",
+  "dev": [
+   6,
+   4
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1043,
+    "tokens_after": 1043,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1667,
+    "tokens_after": 1667,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 4: check whether pattern-tagged failures and 4-try feedback raised the solved count; if not, try planning before coding.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 5.0
+ }
+]

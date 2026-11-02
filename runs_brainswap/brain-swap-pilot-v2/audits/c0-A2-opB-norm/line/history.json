@@ -1,0 +1,127 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   11,
+   10
+  ],
+  "bar": 10.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare independent rule inference and review against direct generation; use trial feedback to guide the next revision.",
+  "dev": [
+   12,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 14,
+    "renamed": 14,
+    "unsupported": {},
+    "tokens_before": 1096,
+    "tokens_after": 1067,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 22,
+    "renamed": 22,
+    "unsupported": {},
+    "tokens_before": 1203,
+    "tokens_after": 1146,
+    "coverage": 1.0
+   }
+  },
+  "note": "Test whether tracing original positions and operation order improves hidden-test generalization.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 14,
+    "renamed": 14,
+    "unsupported": {},
+    "tokens_before": 1096,
+    "tokens_after": 1067,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 22,
+    "renamed": 22,
+    "unsupported": {},
+    "tokens_before": 1203,
+    "tokens_after": 1146,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial scores and investigate operation-order and boundary ambiguities in failed tasks.",
+  "dev": [
+   13,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ }
+]

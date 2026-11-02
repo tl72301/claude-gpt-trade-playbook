@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   11,
+   11
+  ],
+  "bar": 11.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1011,
+    "tokens_after": 1011,
+    "coverage": 1.0
+   }
+  },
+  "note": "Trial broader inference strategies; shown-example checks alone cannot detect hidden-rule errors.",
+  "dev": [
+   14,
+   14
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 14.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 687,
+    "tokens_after": 687,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1163,
+    "tokens_after": 1163,
+    "coverage": 1.0
+   }
+  },
+  "note": "Broaden compositional rule inference and validate proposals before larger trials.",
+  "dev": [
+   14
+  ],
+  "status": "rejected",
+  "bar": 14.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 687,
+    "tokens_after": 687,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1163,
+    "tokens_after": 1163,
+    "coverage": 1.0
+   }
+  },
+  "note": "Broaden rule inference to computed list statistics and validate proposed source before trials.",
+  "dev": [
+   14
+  ],
+  "status": "rejected",
+  "bar": 14.0
+ }
+]

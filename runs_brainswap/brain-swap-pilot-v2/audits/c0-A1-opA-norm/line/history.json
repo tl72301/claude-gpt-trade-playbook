@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   9
+  ],
+  "bar": 8.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1371,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now iterates on api.check feedback with all failing examples and enforces a def f block; next, test whether a trial step helps choose between candidates.",
+  "dev": [
+   9,
+   9
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 13,
+    "renamed": 13,
+    "unsupported": {},
+    "tokens_before": 745,
+    "tokens_after": 727,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 20,
+    "renamed": 20,
+    "unsupported": {},
+    "tokens_before": 1202,
+    "tokens_after": 1167,
+    "coverage": 1.0
+   }
+  },
+  "note": "Make the solver refine its best prior attempt with compile checks and pass-count tracking, and give the improver a per-task scoreboard to detect regressions against memory.",
+  "dev": [
+   7
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 13,
+    "renamed": 13,
+    "unsupported": {},
+    "tokens_before": 745,
+    "tokens_after": 727,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 20,
+    "renamed": 20,
+    "unsupported": {},
+    "tokens_before": 1202,
+    "tokens_after": 1167,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compile-check and keep the best-scoring candidate in the solver, and classify failures by category in the improver so each generation targets the dominant failure type.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ }
+]

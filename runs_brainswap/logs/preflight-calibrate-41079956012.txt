@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "seed_solved": "2/3",
+ "improver_status": "ok",
+ "files_returned": [
+  "solver.py",
+  "improver.py"
+ ],
+ "refusals": 0,
+ "mismatches": 0,
+ "served": [
+  "claude-sonnet-5-5"
+ ]
+}
+{
+ "model": "gpt-6.1-terra",
+ "seed_solved": "2/3",
+ "improver_status": "ok",
+ "files_returned": [
+  "solver.py",
+  "improver.py"
+ ],
+ "refusals": 0,
+ "mismatches": 0,
+ "served": [
+  "gpt-6.1-terra"
+ ]
+}
+preflight: OK
+A claude-sonnet-5-5: depth 2: 7/10  depth 3: 4/10  depth 4: 2/10  depth 5: 1/10
+B gpt-6.1-terra: depth 2: 8/10  depth 3: 5/10  depth 4: 2/10  depth 5: 2/10
+Pick depths where BOTH models' seed solvers land roughly 25-65%, then set tasks.partitions.

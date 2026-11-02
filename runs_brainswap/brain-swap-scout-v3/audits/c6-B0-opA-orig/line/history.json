@@ -1,0 +1,86 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   5,
+   5
+  ],
+  "bar": 5.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1393,
+    "tokens_after": 1393,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now self-checks against shown examples with feedback and keeps the best candidate; improver ranks candidates by trial score, breaking ties toward simpler code.",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'getattr' is not allowed"
+  ],
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1393,
+    "tokens_after": 1393,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver samples independent hypotheses, keeps only candidates that pass all shown examples, and returns the simplest; improver drops the undocumented trial scoring and selects the simplest valid proposal.",
+  "dev": [
+   4
+  ],
+  "status": "rejected",
+  "bar": 5.0
+ }
+]

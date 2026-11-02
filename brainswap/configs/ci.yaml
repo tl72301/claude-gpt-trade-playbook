@@ -1,0 +1,16 @@
+# Tiny configuration for tests and CI (mock models, real sandbox optional).
+extends: pilot.yaml
+name: brain-swap-ci
+tasks:
+  seed: 7
+  partitions:
+    evo_dev:      {n: 6, depths: [2, 3]}
+    evo_progress: {n: 6, depths: [2, 3]}
+    audit_dev:    {n: 6, depths: [2, 3]}
+    sealed:       {n: 8, depths: [2, 3]}
+evolution: {lineages_per_model: 2, generations: 3}
+baselines: {frozen_lineages_per_model: 1, onegen_lineages_per_model: 1}
+audits: {checkpoints: [3], continuation_generations: 2, presentations: [orig, norm], sealed_baseline_repeats: 1}
+sandbox: {isolation: inprocess}
+workers: 4
+parallel_lines: 1

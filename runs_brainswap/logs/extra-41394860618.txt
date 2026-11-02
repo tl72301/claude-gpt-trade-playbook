@@ -1,0 +1,14 @@
+retry-only A: sealed [16, 18] mean 17/40 vs seed 16 -> gain +1.0
+retry-only B: sealed [18, 18] mean 18/40 vs seed 17.5 -> gain +0.5
+frozen/A0: final dev bar 8, accepted 1, procedure edits kept 0
+frozen/A1: final dev bar 8.5, accepted 1, procedure edits kept 0
+frozen/A2: final dev bar 7.5, accepted 1, procedure edits kept 0
+frozen/B0: final dev bar 12, accepted 3, procedure edits kept 0
+frozen/B1: final dev bar 11.5, accepted 2, procedure edits kept 0
+frozen/B2: final dev bar 11, accepted 3, procedure edits kept 0
+frozen/frozen-A0: final dev bar 8, accepted 1
+frozen/frozen-A1: final dev bar 8.5, accepted 1
+frozen/frozen-A2: final dev bar 7.5, accepted 1
+frozen/frozen-B0: final dev bar 12, accepted 3
+frozen/frozen-B1: final dev bar 11.5, accepted 2
+frozen/frozen-B2: final dev bar 11, accepted 3

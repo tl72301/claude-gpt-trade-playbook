@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   10
+  ],
+  "bar": 10.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Seed solver made a single unchecked LLM call. The new solver reasons about candidate rules, verifies against the shown examples with api.check, retries with concrete failure feedback, and returns the best-scoring code. The improver now keeps valid proposals instead of discarding unchanged-improver ones.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 10.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now analyzes examples, uses api.check feedback across up to 4 attempts, keeps the best-scoring code, and shows failures with a re-derive instruction. The improver keeps valid proposals and no longer discards ones with an unchanged improver.",
+  "dev": [
+   11,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 11.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 810,
+    "tokens_after": 810,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1107,
+    "tokens_after": 1107,
+    "coverage": 1.0
+   }
+  },
+  "note": "Failures were mostly wrong hypotheses (compositional rules like transform+cumsum) and one missing `f`. The solver now requires a named f, validates it before spending a check, varies the reasoning style per retry, and encourages hand-verification. The improver compiles proposals before trialing them.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 11.0
+ }
+]

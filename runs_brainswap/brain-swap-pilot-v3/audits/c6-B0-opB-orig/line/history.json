@@ -1,0 +1,127 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   9,
+   12
+  ],
+  "bar": 10.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1086,
+    "tokens_after": 1086,
+    "coverage": 1.0
+   }
+  },
+  "note": "Prompt for compositional rules and use checks to repair failures on shown examples; reserve trials for comparing general improvements.",
+  "dev": [
+   15,
+   13
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 14.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 783,
+    "tokens_after": 783,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1154,
+    "tokens_after": 1154,
+    "coverage": 1.0
+   }
+  },
+  "note": "Consider output provenance and grouping alongside elementwise transformations; passing examples alone does not resolve ambiguous rules.",
+  "dev": [
+   15,
+   15
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 15.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 922,
+    "tokens_after": 922,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1185,
+    "tokens_after": 1185,
+    "coverage": 1.0
+   }
+  },
+  "note": "Examine how plausible rules differ on duplicates, ordering, and boundaries without inventing ground-truth outputs.",
+  "dev": [
+   14
+  ],
+  "status": "rejected",
+  "bar": 15.0
+ }
+]

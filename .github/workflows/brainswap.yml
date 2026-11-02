@@ -1,0 +1,83 @@
+name: brainswap
+
+# The RSI Brain-Swap Test, in stages. Start each stage from the Actions tab.
+#   preflight  one real solver + improver call per model
+#   calibrate  seed solve rate by task depth, per model
+#   scout      small real run; prints GO / NO-GO
+#   pilot      the feasibility pilot; only after a GO              (capped by the config's limits)
+#   extra      follow-up: retry-only baseline + extra frozen lineages (pilot_v3_extra.yaml)
+# Results are committed under runs_brainswap/. Re-running a stage resumes it.
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "preflight | calibrate | scout | scout-then-pilot | pilot | extra"
+        required: true
+        default: preflight
+      model_budgets:
+        description: "Credit loaded per vendor, e.g. A=50,B=50, used by the scout's cost check"
+        default: ""
+      config:
+        description: "Config file (pilot.yaml or pilot_v3.yaml)"
+        default: "pilot.yaml"
+
+concurrency:
+  group: brainswap-${{ inputs.stage }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  stage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      STAGE: ${{ inputs.stage }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install bubblewrap (sandbox)
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q bubblewrap
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - run: pip install -r requirements.txt
+      - run: python -m brainswap selftest
+      - name: Run stage
+        run: |
+          set -o pipefail
+          mkdir -p runs_brainswap/logs
+          LOG="runs_brainswap/logs/${STAGE}-${GITHUB_RUN_ID}.txt"
+          case "$STAGE" in
+            preflight) python -m brainswap preflight --config "${{ inputs.config }}" 2>&1 | tee "$LOG" ;;
+            calibrate) python -m brainswap calibrate --config "${{ inputs.config }}" --n 40 2>&1 | tee "$LOG" ;;
+            preflight-calibrate)
+                       python -m brainswap preflight --config "${{ inputs.config }}" 2>&1 | tee "$LOG"
+                       python -m brainswap calibrate --config "${{ inputs.config }}" --n 40 2>&1 | tee -a "$LOG" ;;
+            scout)     python -m brainswap scout --model-budgets "${{ inputs.model_budgets }}" 2>&1 | tee "$LOG" ;;
+            scout-then-pilot)
+                       python -m brainswap scout --model-budgets "${{ inputs.model_budgets }}" 2>&1 | tee "$LOG"
+                       if grep -q "DECISION: GO" "$LOG"; then
+                         echo "=== GO: starting pilot ===" | tee -a "$LOG"
+                         timeout 300m python -m brainswap run --config pilot.yaml 2>&1 | tee "runs_brainswap/logs/pilot-${GITHUB_RUN_ID}.txt"
+                       else
+                         echo "=== NO-GO: pilot not started ===" | tee -a "$LOG"
+                       fi ;;
+            pilot)     timeout 300m python -m brainswap run --config "${{ inputs.config }}" 2>&1 | tee "$LOG" ;;
+            extra)     timeout 300m python -m brainswap extra --config "${{ inputs.config }}" 2>&1 | tee "$LOG" ;;
+            *) echo "unknown stage $STAGE"; exit 1 ;;
+          esac
+      - name: Commit results
+        if: always()
+        run: |
+          [ -d runs_brainswap ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs_brainswap
+          git commit -m "brainswap: $STAGE results ($(date -u +%F))" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep $((i * 5)); done
+          exit 1

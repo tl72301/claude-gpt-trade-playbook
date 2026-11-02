@@ -1,0 +1,241 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   3,
+   4
+  ],
+  "bar": 3.5,
+  "progress": 5
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether check-feedback retries raised solve counts; if trials are unaffordable, drop TRIAL_TASKS and rank candidates by proposal diversity instead.",
+  "dev": [
+   5,
+   5
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 8,
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1020,
+    "tokens_after": 1020,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1532,
+    "tokens_after": 1532,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: measure whether the 'no function f' count drops to zero; if wrong-rule failures dominate, add a verify-then-revise step using the check report.",
+  "dev": [
+   1
+  ],
+  "status": "rejected",
+  "bar": 5.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1020,
+    "tokens_after": 1020,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1532,
+    "tokens_after": 1532,
+    "coverage": 1.0
+   }
+  },
+  "note": "Generation 3: solver now always returns a def f and keeps its best attempt; next, check whether 'no function f' failures drop to zero and whether wrong-rule failures dominate.",
+  "dev": [
+   6,
+   7
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 9,
+  "bar": 6.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1363,
+    "tokens_after": 1363,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1697,
+    "tokens_after": 1697,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: if wrong-rule failures stay above 5 of 16, add a self-consistency step that samples several rules and keeps the one that agrees with most of them.",
+  "dev": [
+   7,
+   5
+  ],
+  "status": "rejected_confirmation",
+  "bar": 6.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1363,
+    "tokens_after": 1363,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1697,
+    "tokens_after": 1697,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5 diagnosis: 0 missing-f failures and 10 wrong-rule failures, so the solver now cycles rule families, verifies rules by hand, and keeps the best partial rule; next, check whether wrong-rule failures drop below 5 of 16.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 6.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1363,
+    "tokens_after": 1363,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1697,
+    "tokens_after": 1697,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: solver now hand-traces candidate rules and revises near-miss rules with full failing examples; check whether wrong-rule failures drop below 5 of 16.",
+  "dev": [
+   6
+  ],
+  "status": "rejected",
+  "bar": 6.5
+ }
+]

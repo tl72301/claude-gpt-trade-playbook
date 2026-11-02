@@ -1,0 +1,255 @@
+{
+ "ops": [
+  "A",
+  "B"
+ ],
+ "checkpoints": [
+  0,
+  6
+ ],
+ "presentations": [
+  "orig"
+ ],
+ "rows": [
+  {
+   "checkpoint": 0,
+   "pres": "orig",
+   "S": -1.5,
+   "S_ci": [
+    -10.086721496027577,
+    7.086721496027577
+   ],
+   "H": {
+    "A": -1.5,
+    "B": -1.5
+   },
+   "matrix": {
+    "A->A": 1.5,
+    "A->B": 3.0,
+    "B->A": 3.0,
+    "B->B": 1.5
+   },
+   "S_logit": -0.2047692167479002,
+   "n_lineages": {
+    "A": 2,
+    "B": 2
+   }
+  },
+  {
+   "checkpoint": 6,
+   "pres": "orig",
+   "S": 0.0,
+   "S_ci": [
+    -15.341463181159105,
+    15.341463181159105
+   ],
+   "H": {
+    "A": 1.5,
+    "B": -1.5
+   },
+   "matrix": {
+    "A->A": 2.0,
+    "A->B": 4.5,
+    "B->A": 0.5,
+    "B->B": 3.0
+   },
+   "S_logit": 0.008748172859888242,
+   "n_lineages": {
+    "A": 2,
+    "B": 2
+   },
+   "dS": 1.5,
+   "dS_ci": [
+    -7.090855932203391,
+    10.090855932203391
+   ],
+   "portable": {
+    "A": -1.0,
+    "B": 1.5
+   },
+   "portable_ci": {
+    "A": [
+     -3.891244122256993,
+     1.891244122256993
+    ],
+    "B": [
+     -3.7645475830288424,
+     6.764547583028842
+    ]
+   }
+  }
+ ],
+ "presentation_info": {
+  "orig": {
+   "tokens_before": 1342.34375,
+   "tokens_after": 1342.34375,
+   "coverage": 1.0,
+   "all_verified": true,
+   "mean_gain": 2.5
+  }
+ },
+ "n_cells": 16,
+ "lineages": {
+  "lines": {
+   "evolution": [
+    {
+     "name": "A0",
+     "model": "A",
+     "bar": [
+      1.5,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+     ],
+     "progress": [
+      3,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "statuses": [
+      "accepted",
+      "rejected",
+      "policy_violation",
+      "rejected",
+      "rejected",
+      "policy_violation"
+     ],
+     "proc_edits_accepted": 1,
+     "accepted": 1
+    },
+    {
+     "name": "A1",
+     "model": "A",
+     "bar": [
+      2.0,
+      2.0,
+      2.0,
+      2.5,
+      2.5,
+      2.5,
+      2.5
+     ],
+     "progress": [
+      4,
+      4,
+      4,
+      6,
+      6,
+      6,
+      6
+     ],
+     "statuses": [
+      "policy_violation",
+      "policy_violation",
+      "accepted",
+      "rejected",
+      "policy_violation",
+      "policy_violation"
+     ],
+     "proc_edits_accepted": 1,
+     "accepted": 1
+    },
+    {
+     "name": "B0",
+     "model": "B",
+     "bar": [
+      5.0,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5
+     ],
+     "progress": [
+      6,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "statuses": [
+      "accepted",
+      "policy_violation",
+      "policy_violation",
+      "policy_violation",
+      "policy_violation",
+      "policy_violation"
+     ],
+     "proc_edits_accepted": 1,
+     "accepted": 1
+    },
+    {
+     "name": "B1",
+     "model": "B",
+     "bar": [
+      4.5,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0
+     ],
+     "progress": [
+      5,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "statuses": [
+      "accepted",
+      "policy_violation",
+      "policy_violation",
+      "policy_violation",
+      "policy_violation",
+      "policy_violation"
+     ],
+     "proc_edits_accepted": 1,
+     "accepted": 1
+    }
+   ]
+  },
+  "comparison": {
+   "A": {
+    "evolution": {
+     "progress_gain": 2.0,
+     "gains": [
+      2,
+      2
+     ],
+     "n": 2
+    }
+   },
+   "B": {
+    "evolution": {
+     "progress_gain": 2.5,
+     "gains": [
+      2,
+      3
+     ],
+     "n": 2
+    }
+   }
+  }
+ },
+ "verdicts": [
+  "checkpoint 6: no reliable growth in home advantage (dS=+1.5, CI -7.1..+10.1)."
+ ],
+ "usage": {
+  "calls": 2007,
+  "refusals": 0
+ }
+}

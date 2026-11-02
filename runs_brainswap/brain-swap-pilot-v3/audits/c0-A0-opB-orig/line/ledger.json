@@ -1,0 +1,17 @@
+{
+ "dev/solver/gpt-6.1-terra": {
+  "calls": 115,
+  "refused": 0,
+  "mismatch": 0
+ },
+ "improver/improver/gpt-6.1-terra": {
+  "calls": 7,
+  "refused": 0,
+  "mismatch": 0
+ },
+ "improver:trial/solver/gpt-6.1-terra": {
+  "calls": 12,
+  "refused": 0,
+  "mismatch": 0
+ }
+}

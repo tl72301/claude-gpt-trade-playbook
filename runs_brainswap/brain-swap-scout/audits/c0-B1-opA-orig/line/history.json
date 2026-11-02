@@ -1,0 +1,89 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   5
+  ],
+  "bar": 4.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Generation 1 added check-and-repair with best-candidate fallback; next, if the solver still fails on many tasks, consider a larger ATTEMPTS value or a sampled-candidate search, and check whether the 'no function f' failures are gone.",
+  "dev": [
+   5,
+   4
+  ],
+  "status": "rejected_confirmation",
+  "bar": 4.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "If solver v2 still fails many tasks, try a few independent samples per task with check-based selection, and inspect whether failures are wrong rules or edge cases such as empty outputs.",
+  "dev": [
+   8,
+   6
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "bar": 7.0
+ }
+]

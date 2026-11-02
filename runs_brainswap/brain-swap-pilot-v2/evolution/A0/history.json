@@ -1,0 +1,239 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   5,
+   4
+  ],
+  "bar": 4.5,
+  "progress": 6
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether robust extraction and check-driven repair fixed the 'no function f' failures, then tune hints from remaining failure patterns.",
+  "dev": [
+   5,
+   4
+  ],
+  "status": "rejected_confirmation",
+  "bar": 4.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: check whether the 'no function f' failures are gone, then diagnose the remaining wrong-rule failures (length and sign patterns) and tune hints accordingly.",
+  "dev": [
+   6,
+   5
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "progress": 7,
+  "bar": 5.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 756,
+    "tokens_after": 756,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1083,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3 solver: rule-first prompting, 6 repair rounds, best-scoring fallback; next check whether remaining failures are wrong-rule on length-changing outputs.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 5.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 756,
+    "tokens_after": 756,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1083,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: check whether the solver's rule-first prompt reduced wrong-rule failures on length-changing tasks, and tally failure families (length, sign, window) from the new length lines.",
+  "dev": [
+   6,
+   5
+  ],
+  "status": "rejected_confirmation",
+  "bar": 5.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 756,
+    "tokens_after": 756,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1083,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6: check whether the one-sentence rule prompt and 6-failure feedback raised the solve count, and use the length-family tally to pick the next hint.",
+  "dev": [
+   3
+  ],
+  "status": "rejected",
+  "bar": 5.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 756,
+    "tokens_after": 756,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1083,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: check whether local example checks cut wasted hidden-test calls and whether the length-changing family still dominates the failure tally.",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'exec' is not allowed"
+  ],
+  "bar": 5.5
+ }
+]

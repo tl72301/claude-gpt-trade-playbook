@@ -1,0 +1,11 @@
+{
+ "name": "onegen-A0",
+ "model": "claude-sonnet-5-5",
+ "mode": "onegen",
+ "presentation": "orig",
+ "generations": 6,
+ "final_bar": 9.0,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T16:13:55+00:00"
+}

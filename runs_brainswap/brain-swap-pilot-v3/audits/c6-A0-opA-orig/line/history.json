@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   8
+  ],
+  "bar": 9.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1038,
+    "tokens_after": 1038,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen1: solver now uses 4 check-feedback attempts, hints, and robust def f extraction; next, inspect which failing tasks remain and add specific pattern hints.",
+  "dev": [
+   12,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 844,
+    "tokens_after": 844,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1096,
+    "tokens_after": 1096,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen2: added neighbor/window/circular hints, 5 attempts, and a larger trial set (16 tasks, 4 candidates); next, check which of the 4 failing tasks remain and refine hints.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 844,
+    "tokens_after": 844,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1096,
+    "tokens_after": 1096,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen3: added hints for short/filtered outputs, 3-windows, circular neighbors, linear combos; 5 attempts; trial set 12. Next: check which of the 4 failing tasks remain and derive their exact rules.",
+  "dev": [
+   12
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ }
+]

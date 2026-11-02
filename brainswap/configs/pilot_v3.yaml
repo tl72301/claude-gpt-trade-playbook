@@ -1,0 +1,36 @@
+# Brain-Swap pilot v3: two FRONTIER brains (Sonnet 5.5 vs GPT-6.1 Terra).
+# Motivation: in pilot v2 the small model (Haiku) barely self-improved, so its
+# procedures had little to specialize. orig presentation only: the normalization
+# arm had nothing to act on in v2 and is dropped.
+extends: pilot.yaml
+name: brain-swap-pilot-v3
+models:
+  A:
+    provider: anthropic
+    model: claude-sonnet-5-5
+    effort: low                  # matches Terra's reasoning_effort: low; keeps output short
+    max_tokens: 8000
+    mock_style: snake
+  B:
+    provider: openai_compat
+    model: gpt-6.1-terra
+    api_key_env: OPENAI_API_KEY
+    max_tokens: 16000
+    extra_params: {reasoning_effort: low}
+    mock_style: camel
+tasks:
+  seed: 20261030
+  partitions:
+    evo_dev:      {n: 16, depths: [2, 3, 4]}
+    evo_progress: {n: 20, depths: [2, 3, 4]}
+    audit_dev:    {n: 16, depths: [2, 3, 4]}
+    sealed:       {n: 40, depths: [2, 3, 4]}
+audits:
+  checkpoints: [6]
+  continuation_generations: 3
+  presentations: [orig]
+  replicates_per_cell: 1
+  sealed_baseline_repeats: 2
+limits:
+  max_usd_total: null           # spend cap in dollars: set your own
+  max_usd_per_model: null

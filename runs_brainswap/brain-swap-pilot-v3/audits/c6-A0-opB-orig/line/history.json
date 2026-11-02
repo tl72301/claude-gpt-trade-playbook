@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   13,
+   13
+  ],
+  "bar": 13.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1038,
+    "tokens_after": 1038,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial results across generations; investigate remaining failures without overfitting individual examples.",
+  "dev": [
+   13
+  ],
+  "status": "rejected",
+  "bar": 13.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1038,
+    "tokens_after": 1038,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial scores across generations; inspect hidden-test failures for general inference patterns rather than memorizing examples.",
+  "dev": [
+   14,
+   14
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 14.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 698,
+    "tokens_after": 698,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1063,
+    "tokens_after": 1063,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare candidate and baseline trials; investigate arithmetic and ordering ambiguity without encoding task-specific rules.",
+  "dev": [
+   14
+  ],
+  "status": "rejected",
+  "bar": 14.0
+ }
+]

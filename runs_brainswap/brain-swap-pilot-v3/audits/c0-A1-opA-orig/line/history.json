@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   9
+  ],
+  "bar": 9.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1400,
+    "tokens_after": 1400,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen1: solver now uses 4 attempts with check feedback and rule-stating; improver samples 2 candidates and trials 6 tasks. Next: inspect failing tasks' patterns.",
+  "dev": [
+   13,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 633,
+    "tokens_after": 633,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1011,
+    "tokens_after": 1011,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen2: solver has 5 attempts, richer hints, feedback shows up to 3 failures and demands a different rule; improver uses 3 candidates, 8 trial tasks, shows 5 examples per failure. Next: check which failing tasks remain and the true rules.",
+  "dev": [
+   11
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 633,
+    "tokens_after": 633,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1011,
+    "tokens_after": 1011,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen3: solver has 5 attempts, 3 failures shown per retry, and asks for a different rule each time; improver has 3 candidates, 8 trial tasks, 5 examples per failure. Still unknown: true rules of the 3 failing tasks (e9b7828957, 13c9405ba3, 55d1a18346); work them out by hand.",
+  "dev": [
+   10
+  ],
+  "status": "rejected",
+  "bar": 12.0
+ }
+]

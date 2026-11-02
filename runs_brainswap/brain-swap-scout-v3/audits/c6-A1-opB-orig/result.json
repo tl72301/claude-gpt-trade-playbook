@@ -1,0 +1,20 @@
+{
+ "checkpoint": 6,
+ "origin": "A",
+ "lineage": 1,
+ "op": "B",
+ "pres": "orig",
+ "rep": 0,
+ "procedure_from": "evolution/A1",
+ "cell": "c6-A1-opB-orig",
+ "sealed": 20,
+ "n_sealed": 30,
+ "baseline": 14.0,
+ "gain": 6.0,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "presentation_coverage": 1.0,
+ "tokens_before": 1100.5,
+ "tokens_after": 1100.5,
+ "verified": true
+}

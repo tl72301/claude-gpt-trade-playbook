@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# Simulations are reproducible (python -m brainswap simulate); real runs are committed by CI
+runs_brainswap_mock/
+site/

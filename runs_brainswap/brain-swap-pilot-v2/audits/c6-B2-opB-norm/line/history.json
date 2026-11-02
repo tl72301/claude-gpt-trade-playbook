@@ -1,0 +1,131 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   11,
+   10
+  ],
+  "bar": 10.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 24,
+    "renamed": 24,
+    "unsupported": {},
+    "tokens_before": 1198,
+    "tokens_after": 1143,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare plausible rules, check examples when possible, and trial complete candidate sets before selection.",
+  "dev": [
+   12,
+   11
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 11.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 961,
+    "tokens_after": 901,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 6,
+    "unsupported": {
+     "improve": "call to compile()"
+    },
+    "tokens_before": 1427,
+    "tokens_after": 1403,
+    "coverage": 0.24
+   }
+  },
+  "note": "Strengthen rule comparison and function extraction while preserving verified candidates and trial-based selection.",
+  "dev": [
+   13,
+   13
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 13.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 22,
+    "renamed": 22,
+    "unsupported": {},
+    "tokens_before": 1295,
+    "tokens_after": 1208,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 23,
+    "renamed": 6,
+    "unsupported": {
+     "improve": "call to compile()"
+    },
+    "tokens_before": 1389,
+    "tokens_after": 1367,
+    "coverage": 0.261
+   }
+  },
+  "note": "Compare competing rules more explicitly, improve function recovery, and retain the baseline when full trials regress.",
+  "dev": [
+   13
+  ],
+  "status": "rejected",
+  "bar": 13.0
+ }
+]

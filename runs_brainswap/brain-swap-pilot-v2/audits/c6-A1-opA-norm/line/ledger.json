@@ -1,0 +1,12 @@
+{
+ "dev/solver/claude-haiku-5-5": {
+  "calls": 96,
+  "refused": 0,
+  "mismatch": 0
+ },
+ "improver/improver/claude-haiku-5-5": {
+  "calls": 6,
+  "refused": 0,
+  "mismatch": 0
+ }
+}

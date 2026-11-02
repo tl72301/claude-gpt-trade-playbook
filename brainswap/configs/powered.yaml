@@ -1,0 +1,19 @@
+# A study sized to detect specialization of a few tasks (see DESIGN_BRAIN_SWAP.md
+# section 9). Several hundred dollars; run only after the pilot.
+extends: pilot.yaml
+name: brain-swap-powered
+tasks:
+  seed: 20261029
+  partitions:
+    evo_dev:      {n: 24, depths: [2, 3, 4]}
+    evo_progress: {n: 30, depths: [2, 3, 4]}
+    audit_dev:    {n: 24, depths: [2, 3, 4]}
+    sealed:       {n: 80, depths: [2, 3, 4]}
+evolution: {lineages_per_model: 12, generations: 12}
+baselines: {frozen_lineages_per_model: 4, onegen_lineages_per_model: 4}
+audits:
+  checkpoints: [6, 12]
+  continuation_generations: 4
+  presentations: [orig, norm, neutral, nocomment]
+  sealed_baseline_repeats: 3
+limits: {max_usd_total: null}   # spend cap in dollars: set your own

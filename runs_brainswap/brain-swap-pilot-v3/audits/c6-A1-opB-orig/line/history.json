@@ -1,0 +1,124 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   13,
+   10
+  ],
+  "bar": 11.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1008,
+    "tokens_after": 1008,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare trial results across candidates and investigate remaining failures without overfitting displayed examples.",
+  "dev": [
+   13,
+   12
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 12.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 681,
+    "tokens_after": 681,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1114,
+    "tokens_after": 1114,
+    "coverage": 1.0
+   }
+  },
+  "note": "Compare candidates against a current-solver trial baseline; investigate remaining failures without memorizing examples.",
+  "dev": [
+   14,
+   13
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 13.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": false,
+  "solver_edit": false,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 763,
+    "tokens_after": 763,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1391,
+    "tokens_after": 1391,
+    "coverage": 1.0
+   }
+  },
+  "note": "Preserved the current agent; no trial improvement established.",
+  "status": "no_solver_change",
+  "bar": 13.5
+ }
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   6,
+   4
+  ],
+  "bar": 5.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 2 changes. Solver: (1) the reply is checked for a well-formed `def f` before use, which targets the missing-f failure; (2) the solver uses api.check on shown examples when the check budget allows, feeds back up to five failing examples rather than one, and keeps the candidate with the fewest failures; (3) the prompt asks for an explicit rule hypothesis and hand-verification, aimed at partial and degenerate rules; (4) attempts raised to 4. Improver: (1) a general failure-class guide is added ",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 5.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1251,
+    "tokens_after": 1251,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3 changes. Solver: the reply is extracted from the last fenced block that defines `def f`, with a fallback to raw text. Replies without `def f` are retried with a targeted prompt and do not consume checks. The first prompt asks for a stated rule, a hand check on the shortest and a longer example, and an explicit empty-input requirement. api.check is used only when the checks budget is positive. Up to five failing examples go into the repair prompt, which asks for a revised hypothesis rather ",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'compile' is not allowed"
+  ],
+  "bar": 5.0
+ }
+]

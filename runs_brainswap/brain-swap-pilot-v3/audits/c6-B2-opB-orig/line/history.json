@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   12
+  ],
+  "bar": 11.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1214,
+    "tokens_after": 1214,
+    "coverage": 1.0
+   }
+  },
+  "note": "Check whether compositional-rule prompting and comparable candidate trials improve hidden-test performance.",
+  "dev": [
+   14,
+   15
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 14.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 886,
+    "tokens_after": 886,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1377,
+    "tokens_after": 1377,
+    "coverage": 1.0
+   }
+  },
+  "note": "Test whether explicit relational counts and input-dependent parameters improve generalization without harming solved tasks.",
+  "dev": [
+   14
+  ],
+  "status": "rejected",
+  "bar": 14.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 886,
+    "tokens_after": 886,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1377,
+    "tokens_after": 1377,
+    "coverage": 1.0
+   }
+  },
+  "note": "Test whether explicitly considering index-dependent and relational transformations improves hidden-test generalization.",
+  "dev": [
+   13
+  ],
+  "status": "rejected",
+  "bar": 14.5
+ }
+]

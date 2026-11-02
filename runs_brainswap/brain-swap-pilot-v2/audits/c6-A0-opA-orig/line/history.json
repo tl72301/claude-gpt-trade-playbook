@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   7,
+   11
+  ],
+  "bar": 9.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1083,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: check whether the reason-then-repair solver fixed length/sign failures; if not, diagnose remaining failures per class and target the top one.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1083,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3 solver reasons first and repairs up to 3 times with check feedback; next, target the dominant failure class (length, sign, or index offset) and compare the predicted solved count.",
+  "dev": [
+   11,
+   8
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 681,
+    "tokens_after": 681,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1156,
+    "tokens_after": 1156,
+    "coverage": 1.0
+   }
+  },
+  "note": "Dominant failure class: length_mismatch (output length not tied to input length, e.g. segments delimited by negatives), with missing-def-f as a secondary fix; predicted solved count next generation: 13 of 16.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 9.5
+ }
+]

@@ -1,0 +1,88 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   4,
+   4
+  ],
+  "bar": 4.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1126,
+    "tokens_after": 1126,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether solver revisions from api.check failures raise the hidden-test pass rate, and whether the rule-first prompt reduces overfitting to shown examples.",
+  "dev": [
+   6,
+   6
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 6.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1054,
+    "tokens_after": 1054,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1306,
+    "tokens_after": 1306,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3 tests whether explicit edge-case rule checks and guaranteed def f raise hidden-test pass rates; track solved count and the 2/30 and 6/30 tasks.",
+  "dev": [
+   5
+  ],
+  "status": "rejected",
+  "bar": 6.0
+ }
+]

@@ -1,0 +1,238 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   1,
+   1
+  ],
+  "bar": 1.0,
+  "progress": 3
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver v2 verifies with api.check and retries with failing examples; next, check whether hidden-test failures are overfitting and whether the API reply format matches the extraction.",
+  "dev": [
+   2,
+   3
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": false,
+  "progress": 4,
+  "bar": 2.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 972,
+    "tokens_after": 972,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Next: check whether solver v3's hand-check step reduces hidden-test overfitting; if still low, try asking for two distinct candidate rules and picking the one that is simpler.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 972,
+    "tokens_after": 972,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver v3 adds an explicit rule-statement and per-example hand check before coding; next, measure whether hidden-test failures drop, and if not, try generating several rules and keeping the one that fits all examples with the fewest special-case branches.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 4,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 972,
+    "tokens_after": 972,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 5: v4 adds varied framings per attempt (neighbour, prefix, count/rank, whole-output length, simplest rule) and returns the first candidate that fits every shown example; next, if hidden-test scores stay low, have the solver pick among fully-passing candidates by simplicity rather than the first found.",
+  "dev": [
+   0
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ },
+ {
+  "generation": 5,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 972,
+    "tokens_after": 972,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 6: solver v5 keeps all fully-passing candidates and returns the shortest; next, if hidden scores stay low, test whether the shortest passing rule generalises better than the first one, and try asking for the rule in words before the code.",
+  "dev": [
+   3,
+   2
+  ],
+  "status": "rejected_confirmation",
+  "bar": 2.5
+ },
+ {
+  "generation": 6,
+  "proc_edit_proposed": false,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 972,
+    "tokens_after": 972,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1348,
+    "tokens_after": 1348,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 7: if v6 still scores low, check whether failures are wrong-length outputs or wrong-value outputs, and make the solver test a rule on the shown inputs by code execution before accepting it.",
+  "dev": [
+   2
+  ],
+  "status": "rejected",
+  "bar": 2.5
+ }
+]

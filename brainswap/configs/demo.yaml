@@ -1,0 +1,8 @@
+# SIMULATION of the pilot design with mock models (python -m brainswap simulate).
+# Same structure and sizes as pilot.yaml; agent code runs in-process because
+# every line of it is produced by the deterministic mock.
+extends: pilot.yaml
+name: brain-swap-demo-SIMULATED
+sandbox: {isolation: inprocess}
+workers: 4
+parallel_lines: 1

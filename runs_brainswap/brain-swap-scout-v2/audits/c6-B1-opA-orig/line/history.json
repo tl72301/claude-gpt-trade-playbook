@@ -1,0 +1,87 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   5,
+   4
+  ],
+  "bar": 4.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver: the seed made a single unchecked LLM call and returned whatever came back, so any wrong rule was final. The revision verifies each candidate against the shown examples with api.check, and on failure re-prompts with the actual failing outputs and the previous code, up to ATTEMPTS rounds, stopping cleanly on budget exhaustion. It asks for the simplest general rule, mentions edge cases, and forbids hard-coding example values, which targets the over-fitted and degenerate-input failures seen ",
+  "status": "policy_violation",
+  "violations": [
+   "improver.py: use of 'getattr' is not allowed"
+  ],
+  "bar": 4.5
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 694,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "orig",
+    "verified": true,
+    "error": null,
+    "total_locals": 0,
+    "renamed": 0,
+    "unsupported": {},
+    "tokens_before": 1171,
+    "tokens_after": 1171,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver: replaced the single unchecked LLM call with up to 3 attempts. Each candidate must compile and define f; when api.check is available, failing shown cases (with actual vs expected outputs) and the previous code are fed back, and the candidate with fewest failures is kept if none passes. Hints now stress the simplest general rule, hand verification, no hard-coding, empty-list handling, and avoiding constant outputs. Improver: trial access is optional via getattr so a missing trial method ca",
+  "status": "policy_violation",
+  "violations": [
+   "solver.py: use of 'compile' is not allowed",
+   "improver.py: use of 'getattr' is not allowed"
+  ],
+  "bar": 4.5
+ }
+]

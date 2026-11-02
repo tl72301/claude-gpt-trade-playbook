@@ -1,0 +1,11 @@
+{
+ "name": "c6-A2-opA-orig",
+ "model": "claude-sonnet-5-5",
+ "mode": "full",
+ "presentation": "orig",
+ "generations": 3,
+ "final_bar": 12.0,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T18:36:22+00:00"
+}

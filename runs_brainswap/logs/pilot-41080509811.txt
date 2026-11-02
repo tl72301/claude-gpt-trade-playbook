@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 256, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 252, in main
+    return handler(args) or 0
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/__main__.py", line 75, in cmd_run
+    Experiment(cfg, out).run()
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 261, in run
+    cells = self.audit()
+            ^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 253, in audit
+    results = list(pool.map(go, specs))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 229, in go
+    s = ln.run(K)
+        ^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/lineage.py", line 125, in run
+    ev = self._eval(cand, self.dev, "dev", f"g{g}:0")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/lineage.py", line 79, in _eval
+    self.guard()
+  File "/home/runner/work/RSIExp/RSIExp/brainswap/experiment.py", line 104, in guard
+    raise BudgetStop(f"model {k} spend ${self.by_key[k]:.2f} reached its cap ${cap:g}")
+brainswap.lineage.BudgetStop: model A reached its spending cap
+evolution/A0: final dev bar 7.5, accepted 1, procedure edits kept 1
+evolution/A1: final dev bar 8.5, accepted 1, procedure edits kept 1
+frozen/A0: final dev bar 9, accepted 2, procedure edits kept 0
+evolution/A2: final dev bar 8, accepted 1, procedure edits kept 1
+onegen/A0: final dev bar 9, accepted 1, procedure edits kept 1
+evolution/B0: final dev bar 11, accepted 1, procedure edits kept 1
+evolution/B1: final dev bar 10.5, accepted 2, procedure edits kept 2
+evolution/B2: final dev bar 12, accepted 1, procedure edits kept 1
+frozen/B0: final dev bar 12, accepted 2, procedure edits kept 0
+onegen/B0: final dev bar 11, accepted 2, procedure edits kept 2
+STOPPED: model A reached its spending cap

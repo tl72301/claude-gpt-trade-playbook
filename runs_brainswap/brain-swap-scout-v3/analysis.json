@@ -1,0 +1,255 @@
+{
+ "ops": [
+  "A",
+  "B"
+ ],
+ "checkpoints": [
+  0,
+  6
+ ],
+ "presentations": [
+  "orig"
+ ],
+ "rows": [
+  {
+   "checkpoint": 0,
+   "pres": "orig",
+   "S": -2.5,
+   "S_ci": [
+    -11.086721496027577,
+    6.086721496027577
+   ],
+   "H": {
+    "A": 0.0,
+    "B": -5.0
+   },
+   "matrix": {
+    "A->A": 1.0,
+    "A->B": 3.5,
+    "B->A": 1.0,
+    "B->B": -1.5
+   },
+   "S_logit": -0.3249030290971708,
+   "n_lineages": {
+    "A": 2,
+    "B": 2
+   }
+  },
+  {
+   "checkpoint": 6,
+   "pres": "orig",
+   "S": 1.25,
+   "S_ci": [
+    -8.279499999999999,
+    10.779499999999999
+   ],
+   "H": {
+    "A": 1.5,
+    "B": 1.0
+   },
+   "matrix": {
+    "A->A": 1.5,
+    "A->B": 4.0,
+    "B->A": 0.0,
+    "B->B": 5.0
+   },
+   "S_logit": 0.16561376926999694,
+   "n_lineages": {
+    "A": 2,
+    "B": 2
+   },
+   "dS": 3.75,
+   "dS_ci": [
+    -0.6767827777012752,
+    8.176782777701275
+   ],
+   "portable": {
+    "A": -0.25,
+    "B": 3.5
+   },
+   "portable_ci": {
+    "A": [
+     -1.8009230384523327,
+     1.3009230384523327
+    ],
+    "B": [
+     -0.9416921900416027,
+     7.941692190041603
+    ]
+   }
+  }
+ ],
+ "presentation_info": {
+  "orig": {
+   "tokens_before": 1383.59375,
+   "tokens_after": 1383.59375,
+   "coverage": 1.0,
+   "all_verified": true,
+   "mean_gain": 2.625
+  }
+ },
+ "n_cells": 16,
+ "lineages": {
+  "lines": {
+   "evolution": [
+    {
+     "name": "A0",
+     "model": "A",
+     "bar": [
+      1.5,
+      1.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5
+     ],
+     "progress": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5
+     ],
+     "statuses": [
+      "rejected",
+      "accepted",
+      "rejected",
+      "rejected",
+      "rejected",
+      "rejected"
+     ],
+     "proc_edits_accepted": 1,
+     "accepted": 1
+    },
+    {
+     "name": "A1",
+     "model": "A",
+     "bar": [
+      2.0,
+      2.0,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5
+     ],
+     "progress": [
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "statuses": [
+      "rejected",
+      "accepted",
+      "rejected_confirmation",
+      "rejected",
+      "rejected",
+      "rejected"
+     ],
+     "proc_edits_accepted": 1,
+     "accepted": 1
+    },
+    {
+     "name": "B0",
+     "model": "B",
+     "bar": [
+      3.0,
+      5.5,
+      6.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5
+     ],
+     "progress": [
+      6,
+      9,
+      7,
+      9,
+      9,
+      9,
+      9
+     ],
+     "statuses": [
+      "accepted",
+      "accepted",
+      "accepted",
+      "rejected",
+      "rejected",
+      "rejected"
+     ],
+     "proc_edits_accepted": 3,
+     "accepted": 3
+    },
+    {
+     "name": "B1",
+     "model": "B",
+     "bar": [
+      3.0,
+      4.0,
+      7.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+     ],
+     "progress": [
+      5,
+      6,
+      9,
+      8,
+      8,
+      8,
+      8
+     ],
+     "statuses": [
+      "accepted",
+      "accepted",
+      "accepted",
+      "rejected",
+      "rejected",
+      "rejected_confirmation"
+     ],
+     "proc_edits_accepted": 3,
+     "accepted": 3
+    }
+   ]
+  },
+  "comparison": {
+   "A": {
+    "evolution": {
+     "progress_gain": 1.0,
+     "gains": [
+      1,
+      1
+     ],
+     "n": 2
+    }
+   },
+   "B": {
+    "evolution": {
+     "progress_gain": 3.0,
+     "gains": [
+      3,
+      3
+     ],
+     "n": 2
+    }
+   }
+  }
+ },
+ "verdicts": [
+  "checkpoint 6: no reliable growth in home advantage (dS=+3.8, CI -0.7..+8.2)."
+ ],
+ "usage": {
+  "calls": 3547,
+  "refusals": 0
+ }
+}

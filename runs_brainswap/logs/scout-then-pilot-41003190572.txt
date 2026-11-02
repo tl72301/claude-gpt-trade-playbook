@@ -1,0 +1,16 @@
+No pilot simulation at /home/runner/work/RSIExp/RSIExp/runs_brainswap_mock/pilot/null; running one (mock, free) for call counts...
+evolution/A0: final dev bar 2.5, accepted 1, procedure edits kept 1
+evolution/A1: final dev bar 2.5, accepted 1, procedure edits kept 1
+evolution/B0: final dev bar 7.5, accepted 3, procedure edits kept 3
+evolution/B1: final dev bar 8, accepted 3, procedure edits kept 3
+audits: 16 cells
+  [pass] C1 health: refusals 0.0%, mismatches 0, broken generations 0/24
+  [pass] C2 headroom: A: 37%, B: 47%
+  [FAIL] C3 loop works: A: mean dev gain +0.8, procedure edits kept 2; B: mean dev gain +4.8, procedure edits kept 6
+         -> If gains are ~0: raise improver_budget or generations. If procedure edits are never kept: the brain-swap question is moot -- report that as the finding.
+  [pass] C4 divergence: A: 2 lineage(s) changed their procedure; B: 2 lineage(s) changed their procedure
+  [pass] C5 noise: gen-0 gain SD 2.16 tasks (scout) -> pilot minimum detectable S ~ 4.0 tasks (limit 6)
+  [FAIL] C6 cost: dollar figures removed from the public copy
+         -> Shrink the pilot (fewer lineages/generations) or load more credit with that vendor.
+DECISION: NO-GO
+=== NO-GO: pilot not started ===

@@ -1,0 +1,123 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   10,
+   8
+  ],
+  "bar": 9.0,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 25,
+    "unsupported": {},
+    "tokens_before": 1101,
+    "tokens_after": 1031,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now uses checked feedback loops with per-example failure reporting and best-so-far fallback; improver selects the highest-scoring candidate by trial result.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 25,
+    "unsupported": {},
+    "tokens_before": 1101,
+    "tokens_after": 1031,
+    "coverage": 1.0
+   }
+  },
+  "note": "Solver now verifies candidates with checks, feeds back concrete mismatches, and keeps the best-scoring code; improver selects by trial score with budget-safe fallbacks.",
+  "dev": [
+   8
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 25,
+    "unsupported": {},
+    "tokens_before": 1101,
+    "tokens_after": 1031,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3 lineage: solver now enumerates rule hypotheses, tests each against every example, syntax-gates candidates, and repairs from the full failing list; improver keeps untested valid proposals as fallbacks.",
+  "dev": [
+   9
+  ],
+  "status": "rejected",
+  "bar": 9.0
+ }
+]

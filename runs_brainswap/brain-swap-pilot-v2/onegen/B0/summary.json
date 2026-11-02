@@ -1,0 +1,11 @@
+{
+ "name": "onegen-B0",
+ "model": "gpt-6.1-terra",
+ "mode": "onegen",
+ "presentation": "orig",
+ "generations": 6,
+ "final_bar": 10.5,
+ "accepted": 1,
+ "proc_edits_accepted": 1,
+ "finished_at": "2026-10-30T07:10:56+00:00"
+}

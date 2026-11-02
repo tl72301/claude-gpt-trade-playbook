@@ -1,0 +1,125 @@
+[
+ {
+  "generation": 0,
+  "status": "start",
+  "dev": [
+   8,
+   7
+  ],
+  "bar": 7.5,
+  "progress": null
+ },
+ {
+  "generation": 1,
+  "proc_edit_proposed": true,
+  "solver_edit": true,
+  "improver_status": "ok",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 12,
+    "renamed": 12,
+    "unsupported": {},
+    "tokens_before": 694,
+    "tokens_after": 673,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 18,
+    "renamed": 18,
+    "unsupported": {},
+    "tokens_before": 1083,
+    "tokens_after": 1054,
+    "coverage": 1.0
+   }
+  },
+  "note": "Gen 3: solver now repairs up to 3 times with check feedback on all failing examples; next, verify whether wrong-rule failures on length and sign patterns persist.",
+  "dev": [
+   9,
+   9
+  ],
+  "status": "accepted",
+  "proc_edit_accepted": true,
+  "bar": 9.0
+ },
+ {
+  "generation": 2,
+  "proc_edit_proposed": false,
+  "solver_edit": false,
+  "improver_status": "crash",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 17,
+    "unsupported": {},
+    "tokens_before": 875,
+    "tokens_after": 859,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 20,
+    "unsupported": {
+     "categorize": "nested function/lambda/class"
+    },
+    "tokens_before": 1446,
+    "tokens_after": 1408,
+    "coverage": 0.8
+   }
+  },
+  "note": "",
+  "status": "improver_crash",
+  "error": "/bs/entry.py\", line 56, in categorize\n    worst = sorted(failed, key=lambda r: float(str(r[\"failure\"]).split(\"/\")[0] or 0))[:3]\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/bs/entry.py\", line 56, in <lambda>\n    worst = sorted(failed, key=lambda r: float(str(r[\"failure\"]).split(\"/\")[0] or 0))[:3]\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: could not convert string to float: 'no function f'\n",
+  "bar": 9.0
+ },
+ {
+  "generation": 3,
+  "proc_edit_proposed": false,
+  "solver_edit": false,
+  "improver_status": "crash",
+  "refusals": 0,
+  "presentation": {
+   "solver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 17,
+    "renamed": 17,
+    "unsupported": {},
+    "tokens_before": 875,
+    "tokens_after": 859,
+    "coverage": 1.0
+   },
+   "improver.py": {
+    "condition": "norm",
+    "verified": true,
+    "error": null,
+    "total_locals": 25,
+    "renamed": 20,
+    "unsupported": {
+     "categorize": "nested function/lambda/class"
+    },
+    "tokens_before": 1446,
+    "tokens_after": 1408,
+    "coverage": 0.8
+   }
+  },
+  "note": "",
+  "status": "improver_crash",
+  "error": "/bs/entry.py\", line 56, in categorize\n    worst = sorted(failed, key=lambda r: float(str(r[\"failure\"]).split(\"/\")[0] or 0))[:3]\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/bs/entry.py\", line 56, in <lambda>\n    worst = sorted(failed, key=lambda r: float(str(r[\"failure\"]).split(\"/\")[0] or 0))[:3]\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: could not convert string to float: 'no function f'\n",
+  "bar": 9.0
+ }
+]

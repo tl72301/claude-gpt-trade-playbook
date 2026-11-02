@@ -1,0 +1,17 @@
+evolution/A0: final dev bar 7.5, accepted 1, procedure edits kept 1
+evolution/A1: final dev bar 8.5, accepted 1, procedure edits kept 1
+frozen/A0: final dev bar 9, accepted 2, procedure edits kept 0
+evolution/A2: final dev bar 8, accepted 1, procedure edits kept 1
+onegen/A0: final dev bar 9, accepted 1, procedure edits kept 1
+evolution/B0: final dev bar 11, accepted 1, procedure edits kept 1
+evolution/B1: final dev bar 10.5, accepted 2, procedure edits kept 2
+evolution/B2: final dev bar 12, accepted 1, procedure edits kept 1
+onegen/B0: final dev bar 11, accepted 2, procedure edits kept 2
+frozen/B0: final dev bar 12, accepted 2, procedure edits kept 0
+audits: 24 cells
+  ckpt  0 orig      S=-1.17
+  ckpt  6 orig      S=+2.67  dS=+3.83 [-3.39,+11.06]
+  - checkpoint 6: no reliable growth in home advantage (dS=+3.8, CI -3.4..+11.1).
+  - model A: self-modifying lineages did NOT reliably beat the frozen-improver baseline (+1.3, CI n/a) -> RSI mechanism not demonstrated.
+  - model B: self-modifying lineages did NOT reliably beat the frozen-improver baseline (+0.0, CI n/a) -> RSI mechanism not demonstrated.
+  calls: 9109

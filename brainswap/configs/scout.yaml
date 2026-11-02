@@ -1,0 +1,20 @@
+# Stage 1: the scout. A small real run that decides whether the
+# pilot is worth running. `python -m brainswap scout` runs it and
+# prints GO / NO-GO against criteria fixed in advance (DESIGN_BRAIN_SWAP.md section 10).
+extends: pilot.yaml
+name: brain-swap-scout-v3
+tasks:
+  seed: 20261029
+  partitions:
+    evo_dev:      {n: 12, depths: [2, 3, 4]}
+    evo_progress: {n: 12, depths: [2, 3, 4]}
+    audit_dev:    {n: 12, depths: [2, 3, 4]}
+    sealed:       {n: 30, depths: [2, 3, 4]}
+evolution: {lineages_per_model: 2, generations: 6}
+baselines: {frozen_lineages_per_model: 0, onegen_lineages_per_model: 0}
+audits:
+  checkpoints: [6]
+  continuation_generations: 2
+  presentations: [orig]
+  sealed_baseline_repeats: 2
+limits: {max_usd_total: null}   # spend cap in dollars: set your own

@@ -1,0 +1,7 @@
+anthropic>=2.3.0
+pyyaml>=6.0
+matplotlib>=3.8
+huggingface_hub>=0.24
+pytest>=8.0
+black==24.10.0       # brainswap: formatting step of the presentation intervention (AST-checked)
+openai>=1.40         # brainswap: OpenAI-compatible client (used for Gemini)
