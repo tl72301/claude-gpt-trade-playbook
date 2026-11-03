@@ -1,8 +1,8 @@
-# Same Solver, Different Improver
+# Claude and GPT Trade Playbooks
 
 Does each AI model gain more from the improvement process it helped write?
 
-I gave Claude Sonnet 5.5 and GPT-6.1 Terra the same two Python files. One solved logic puzzles. The other, `improver.py`, which I call the improvement process, proposed edits to both files, including itself. After six rounds, I restored the original solver, cleared the external memory log, and gave each evolved improvement process three more rounds under each model. Would either model gain more from the improvement process it had helped write?
+I gave Claude Sonnet 5.5 and GPT-6.1 Terra the same two Python files. One solved logic puzzles. The other, `improver.py`, which I call the improvement process, served as each model's playbook for getting better. It proposed edits to both files, including itself. After six rounds, I restored the original solver, cleared the external memory log, and gave each evolved improvement process three more rounds under each model. Would either model gain more from the improvement process it had helped write?
 
 This repo has the full harness, the configs, and the raw results from every real run.
 
